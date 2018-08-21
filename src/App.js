@@ -6,7 +6,9 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-          <Boton></Boton>
+          <Boton>Guardar cambios</Boton>
+          <Boton primary>Publicar proyecto</Boton>
+
       </div>
     );
   }
