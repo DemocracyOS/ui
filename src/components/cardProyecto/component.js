@@ -67,16 +67,16 @@ const SocialFooter = styled.div`
   font-size:1.6em;
 `;
 
-export default function cardProyecto() {
+export default function cardProyecto(props) {
   return (
     <CardProyecto>
-      <TagTitle>Hola</TagTitle>
+      <TagTitle>{props.tagTitle}</TagTitle>
       <CardContent>
-        <Title>Terrenos Fiscales</Title>
-        <DateCreated>Creado el 17/07/2018</DateCreated>
+        <Title>{props.title}</Title>
+        <DateCreated>{props.dateCreated}</DateCreated>
       </CardContent>   
       <SocialFooter>
-        3 Comentarios
+        {props.commentaryItems} {props.commentaryItems === 1 ? ' Comentario' : ' Comentarios'}
       </SocialFooter>
     </CardProyecto>
   )

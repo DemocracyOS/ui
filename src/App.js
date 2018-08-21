@@ -8,7 +8,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-          <CardProyecto/>
+          <CardProyecto tagTitle={'Ciudadanía'} title={'Terrenos fiscales'} dateCreated={'12/12/2018'} commentaryItems={9}/>
           <Boton>Guardar cambios</Boton>
           <Boton primary>Publicar proyecto</Boton>
       </div>
