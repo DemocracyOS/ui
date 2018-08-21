@@ -9,9 +9,9 @@ const Button = styled.button`
   padding: 0.5em 2em;
   border-radius: 20px;
   
-  background: ${props => props.primary ? '#5E98BA' : 'white'};
-  color: ${props => props.primary ? 'white' : '#5E98BA'};
-  border: 2px solid ${props => props.primary ? '#5E98BA' : ' #A5CEE7'};
+  background: ${props => props.primary ? 'var(--primary-color)' : 'white'};
+  color: ${props => props.primary ? 'white' : 'var(--primary-color)'};
+  border: 2px solid ${props => props.primary ? 'var(--primary-color)' : ' var(--secondary-color)'};
 `;
 
 export default Button
