@@ -4,7 +4,7 @@ const Button = styled.button`
   display: inline-block;
   color:#5e99bc;
   font-size: 1em;
-  font-weight:500;
+  font-weight:400;
   margin: 1em;
   padding: 0.5em 2em;
   border-radius: 20px;
