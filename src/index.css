@@ -53,7 +53,7 @@
   --white: #FFFFFF;
   --black: #000000;
   --gray: #B8B8B8;
-  --primary-color: #5E98BA;
+  --primary-color: #5182A0;
   --secondary-color: #A5CEE7;
   --highlight: #ED8862;
   --warning: #E86062;
@@ -74,6 +74,8 @@
 }
 
 body {
+  margin:0;
+  padding:0;
   width: 100%;
   background-color: var(--white);
   color: var(--black);
