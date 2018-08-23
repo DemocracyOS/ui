@@ -13,7 +13,11 @@
     "type": "git",
     "url": "git+https://github.com/democracyos/ui.git"
   },
-  "keywords": ["react", "ui", "storybook"],
+  "keywords": [
+    "react",
+    "ui",
+    "storybook"
+  ],
   "author": "Democracy OS team",
   "license": "ISC",
   "bugs": {
