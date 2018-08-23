@@ -15,8 +15,8 @@ const ButtonContainer = styled.button`
   border: 2px solid ${props => props.primary ? 'var(--primary-color)' : 'var(--secondary-color)'};
 `;
 
-const Button = (props) => (
+ const Button = (props) => (
   <ButtonContainer {...props} />
 )
 
-export default Button
+ export default Button
