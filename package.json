@@ -32,6 +32,8 @@
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-1": "^6.24.1",
+    "eslint": "^5.4.0",
+    "eslint-config-democracyos": "^2.0.2",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
     "styled-components": "^1.0.10"
