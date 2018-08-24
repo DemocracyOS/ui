@@ -4,6 +4,7 @@ import { addDecorator } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 import { withInfo } from '@storybook/addon-info';
 import Button from '../src/components/button/component.js';
+import Suggestion from '../src/components/suggestion/component.js';
 import '../src/index.css';
 
 addDecorator((story, context) => withInfo('common info')(story)(context));
@@ -14,4 +15,8 @@ storiesOf('Button', module)
   ))
   .add('Secondary button', () => (
     <Button onClick={action('clicked')}>Secondary button</Button>
+  ))
+storiesOf('Suggestion', module)
+  .add('Suggestion card', () => (
+    <Suggestion />
   ))
