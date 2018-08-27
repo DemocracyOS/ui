@@ -81,3 +81,7 @@ body {
   color: var(--black);
   font-family: var(--regular), 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
+
+a {
+  text-decoration: none;
+}
