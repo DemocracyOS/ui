@@ -1,8 +1,6 @@
 import React from 'react'
-import Button from './components/button/component'
-import Suggestion from './components/suggestion/component'
+// import Button from './components/button/component'
 
-export { 
-  Button,
-  Suggestion
-}
+// export { 
+//   Button
+// }
