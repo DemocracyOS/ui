@@ -1,7 +1,10 @@
 import styled from 'styled-components'
 import React from 'react'
+<<<<<<< HEAD
 import { Link } from 'react-router-dom'
 import PropTypes from 'prop-types'
+=======
+>>>>>>> add story
 
 const MenuLink = styled.li`
 color:#000;
@@ -24,6 +27,14 @@ const Menulink = (props) => (
 
 export default Menulink
 
+<<<<<<< HEAD
 Menulink.propTypes = {
   title: PropTypes.string
+=======
+export default function menulink () {
+  return (
+    <MenuLink>  Hola  </MenuLink>
+
+  )
+>>>>>>> add story
 }

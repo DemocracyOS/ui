@@ -50,4 +50,4 @@ storiesOf('Linkboard', module)
   .add('Secondary button', () => (
     <Button onClick={action('clicked')}>Secondary button</Button>
   ))
-
+  
