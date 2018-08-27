@@ -6,11 +6,12 @@ const Title = styled.a`
   font-weight: var(--bold);
   font-size: 3rem;
   color: #192a34;
+  text-decoration: none;
 `
 
-const NavBarTitle = () => (
+const NavBarTitle = (props) => (
   <Link to='/'>
-    <Title />
+    <Title>{ props.children }</Title>
   </Link>
 )
 
