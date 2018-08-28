@@ -7,6 +7,7 @@ import UserBar from './components/user-bar/component'
 import HeroTitle from './elements/hero-title/component'
 import HeroSubtitle from './elements/hero-subtitle/component'
 import HeroButton from './elements/hero-button/component'
+import HeroImg from './elements/hero-img/component'
 
 export {
   NavBarTitle,
@@ -14,5 +15,6 @@ export {
   UserBar,
   HeroTitle,
   HeroSubtitle,
-  HeroButton
+  HeroButton,
+  HeroImg
 }

@@ -13,7 +13,7 @@ import UserBar from '../src/components/user-bar/component'
 import LinkbarLink from '../src/elements/linkbar-link/component'
 import Linkbar from '../src/components/linkbar/component'
 import HeroTitle from '../src/elements/hero-title/component'
-import  { HeroSubtitle, HeroButton } from '../src/index.js'
+import  { HeroSubtitle, HeroButton, HeroImg } from '../src/index.js'
 
 addDecorator((story, context) => withInfo('common info')(story)(context))
 addDecorator((story) => <Router history={history}>{story()}</Router>)
@@ -73,4 +73,9 @@ storiesOf('elements/HeroSubtitle', module)
 storiesOf('elements/HeroButton', module)
   .add('Hero Button', () => (
     <HeroButton onClick={action('clicked')}>Hero button</HeroButton>
+  ))
+
+storiesOf('elements/HeroImg', module)
+  .add('Hero Img', () => (
+    <HeroImg src='' />
   ))
