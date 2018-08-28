@@ -4,9 +4,11 @@ import './index.css'
 import NavBarTitle from './elements/navbar-title/component'
 import UserLink from './elements/user-link/component'
 import UserBar from './components/user-bar/component'
+import HeroTitle from './elements/hero-title/component'
 
 export {
   NavBarTitle,
   UserLink,
-  UserBar
+  UserBar,
+  HeroTitle
 }

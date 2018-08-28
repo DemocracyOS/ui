@@ -12,6 +12,7 @@ import UserLink from '../src/elements/user-link/component'
 import UserBar from '../src/components/user-bar/component'
 import LinkbarLink from '../src/elements/linkbar-link/component'
 import Linkbar from '../src/components/linkbar/component'
+import HeroTitle from '../src/elements/hero-title/component'
 
 addDecorator((story, context) => withInfo('common info')(story)(context))
 addDecorator((story) => <Router history={history}>{story()}</Router>)
@@ -56,4 +57,8 @@ storiesOf('components/linkbar', module)
       { name: 'Proyectos', url: '/' },
       { name: 'Cómo participar', url: '/' },
       { name: 'La propuesta', url: '/' }]} />
+  ))
+storiesOf('elements/HeroTitle', module)
+  .add('Hero Title', () => (
+    <HeroTitle>Hero title</HeroTitle>
   ))
