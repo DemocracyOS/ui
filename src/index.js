@@ -6,11 +6,13 @@ import UserLink from './elements/user-link/component'
 import UserBar from './components/user-bar/component'
 import HeroTitle from './elements/hero-title/component'
 import HeroSubtitle from './elements/hero-subtitle/component'
+import HeroButton from './elements/hero-button/component'
 
 export {
   NavBarTitle,
   UserLink,
   UserBar,
   HeroTitle,
-  HeroSubtitle
+  HeroSubtitle,
+  HeroButton
 }
