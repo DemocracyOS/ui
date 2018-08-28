@@ -3,27 +3,25 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import PropTypes from 'prop-types'
 
-const MenuLink = styled.li`
-color:#000;
+const MenuStyledLink = styled(Link)`
+`
+const MenuLinkItem = styled.li`
+color:#192a34;
 display:inline-block;
 padding:10px 20px;
+font-size:1.6rem;
 `
-const Wrapper = styled.div`
-`
-const Menulink = (props) => (
-  <Wrapper>
-    <Link>
-      <MenuLink>
-        <a>
-          {props.title}
-        </a>
-      </MenuLink>
-    </Link>
-  </Wrapper>
+const Menulink = ({ name, url }) => (
+  <MenuStyledLink to={url}>
+    <MenuLinkItem>
+      {name}
+    </MenuLinkItem>
+  </MenuStyledLink>
 )
 
-export default Menulink
-
 Menulink.propTypes = {
-  title: PropTypes.string
+  name: PropTypes.string,
+  url: PropTypes.string
 }
+
+export default Menulink
