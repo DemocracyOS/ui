@@ -7,6 +7,7 @@ import { action } from '@storybook/addon-actions'
 import { withInfo } from '@storybook/addon-info'
 import '../src/index.css'
 import NavBarTitle from '../src/elements/navbar-title/component'
+import UserLink from '../src/elements/user-link/component'
 
 addDecorator((story, context) => withInfo('common info')(story)(context))
 addDecorator((story) => <Router history={history}>{story()}</Router>)
@@ -22,4 +23,9 @@ history.goForward = action('history.goForward')
 storiesOf('elements/NavBarTitle', module)
   .add('Navbar Title', () => (
     <NavBarTitle>Default title</NavBarTitle>
+  ))
+
+storiesOf('elements/UserLink', module)
+  .add('UserLink', () => (
+    <UserLink name='Log in' url='/' />
   ))
