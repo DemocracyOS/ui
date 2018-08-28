@@ -8,12 +8,16 @@ import { withInfo } from '@storybook/addon-info'
 import { withNotes } from '@storybook/addon-notes'
 import '../src/index.css'
 import NavBarTitle from '../src/elements/navbar-title/component'
+<<<<<<< 8b2c09f86d5600e19f736ea164a5a88962ae12ef
 import UserLink from '../src/elements/user-link/component'
 import UserBar from '../src/components/user-bar/component'
 import LinkbarLink from '../src/elements/linkbar-link/component'
 import Linkbar from '../src/components/linkbar/component'
 import HeroTitle from '../src/elements/hero-title/component'
 import  { HeroSubtitle, HeroButton, HeroImg } from '../src/index.js'
+=======
+import TitleH2 from '../src/elements/title-h2/component'
+>>>>>>> add h2 element
 
 addDecorator((story, context) => withInfo('common info')(story)(context))
 addDecorator((story) => <Router history={history}>{story()}</Router>)
@@ -78,4 +82,8 @@ storiesOf('elements/HeroButton', module)
 storiesOf('elements/HeroImg', module)
   .add('Hero Img', () => (
     <HeroImg src='' />
+storiesOf('elements/Title-h2', module)
+  .add('H2 - Title', () => (
+    <TitleH2>Proyectos en debate</TitleH2>
+
   ))
