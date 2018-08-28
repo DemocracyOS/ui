@@ -3,19 +3,23 @@ import PropTypes from 'prop-types'
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 
-const UserA = styled.a`
+const UserStyledLink = styled(Link)`
   font-family: var(--bold);
   font-size: 1.6rem;
   color: #4f81a1;
-  &:nth-child(even) {
-    background: palevioletred;
+  &:first-child {
+    margin-right: 21px;
+  }
+  &:first-child:after {
+    content: '·';
+    margin-left: 21px;
   }
 `
 
 const UserLink = ({ name, url }) => (
-  <Link to={url}>
-    <UserA>{name}</UserA>
-  </Link>
+  <UserStyledLink to={url}>
+    {name}
+  </UserStyledLink>
 )
 
 UserLink.propTypes = {
