@@ -33,7 +33,9 @@ history.goForward = action('history.goForward')
 
 storiesOf('elements/NavBarTitle', module)
   .add('Navbar Title', () => (
-    <NavBarTitle>Default title</NavBarTitle>
+    <NavBarTitle>
+      <Link to='/'>Default title</Link>
+    </NavBarTitle>
   ))
 
 storiesOf('components/UserBar', module)
