@@ -1,5 +1,6 @@
 import React from 'react'
 import { Router } from 'react-router'
+import { Link } from 'react-router-dom'
 import createMemoryHistory from 'history/createMemoryHistory'
 import { storiesOf } from '@storybook/react'
 import { addDecorator } from '@storybook/react'
@@ -8,9 +9,7 @@ import { withInfo } from '@storybook/addon-info'
 import { withNotes } from '@storybook/addon-notes'
 import '../src/index.css'
 import NavBarTitle from '../src/elements/navbar-title/component'
-import UserLink from '../src/elements/user-link/component'
 import UserBar from '../src/components/user-bar/component'
-import LinkbarLink from '../src/elements/linkbar-link/component'
 import Linkbar from '../src/components/linkbar/component'
 import  { HeroTitle, HeroSubtitle, HeroButton, HeroImg } from '../src/index.js'
 import TitleH2 from '../src/elements/title-h2/component'
@@ -37,28 +36,22 @@ storiesOf('elements/NavBarTitle', module)
     <NavBarTitle>Default title</NavBarTitle>
   ))
 
-storiesOf('elements/UserLink', module)
-  .add('UserLink', () => (
-    <UserLink name='Log in' url='/' />
-  ))
-
 storiesOf('components/UserBar', module)
   .add('UserBar', () => (
-    <UserBar links={[{ name: 'Create account', url: '/' }, { name: 'Log in', url: '/' }]} />
-  ))
-
-storiesOf('elements/linkbar-Link', module)
-  .add('LinkbarLink', () => (
-    <LinkbarLink name='Inicio' url='/' />
+    <UserBar>
+      <Link to='/'>Create account</Link>
+      <Link to='/'>Log in</Link>
+    </UserBar>
   ))
 
 storiesOf('components/linkbar', module)
   .add('Linkbar', () => (
-    <Linkbar links={[
-      { name: 'Inicio', url: '/' },
-      { name: 'Proyectos', url: '/' },
-      { name: 'Cómo participar', url: '/' },
-      { name: 'La propuesta', url: '/' }]} />
+    <Linkbar>
+      <Link to='/'>Inicio</Link>
+      <Link to='/'>Proyectos</Link>
+      <Link to='/'>Cómo participar</Link>
+      <Link to='/'>La propuesta</Link>
+    </Linkbar>
   ))
 storiesOf('elements/HeroTitle', module)
   .add('Hero Title', () => (

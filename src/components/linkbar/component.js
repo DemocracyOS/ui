@@ -1,26 +1,32 @@
 import styled from 'styled-components'
 import React from 'react'
 import PropTypes from 'prop-types'
-import MenuLink from '../../elements/linkbar-link/component'
 
-const Wrapper = styled.ul`
+const Wrapper = styled.div`
   width: 600px;
   display:flex;
   flex-direction:row;
   align-items:center;
   list-style:none;
   padding-left:0;
+  > a {
+    color: #192a34;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1.6rem;
+  }
 `
-const Linkbar = ({ links }) => (
+const Linkbar = ({ children }) => (
   <Wrapper>
-    {links.map(({ name, url }, i) => (
-      <MenuLink name={name} url={url} />
-    ))}
+    { children }
   </Wrapper>
 )
 
 Linkbar.propTypes = {
-  links: PropTypes.array.isRequired
+  children: PropTypes.oneOfType([
+    PropTypes.arrayOf(PropTypes.node),
+    PropTypes.node
+  ]).isRequired
 }
 
 export default Linkbar
