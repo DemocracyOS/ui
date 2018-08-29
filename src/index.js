@@ -1,5 +1,4 @@
 import React from 'react'
-import './index.css'
 // Import elements
 import NavBarTitle from './elements/navbar-title/component'
 import UserLink from './elements/user-link/component'
