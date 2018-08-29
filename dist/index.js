@@ -9,8 +9,6 @@ var _react = require('react');
 
 var _react2 = _interopRequireDefault(_react);
 
-require('./index.css');
-
 var _component = require('./elements/navbar-title/component');
 
 var _component2 = _interopRequireDefault(_component);
