@@ -12,9 +12,10 @@ import UserLink from '../src/elements/user-link/component'
 import UserBar from '../src/components/user-bar/component'
 import LinkbarLink from '../src/elements/linkbar-link/component'
 import Linkbar from '../src/components/linkbar/component'
-import  { HeroTitle, HeroSubtitle, HeroButton, HeroImg } from '../src/index.js'
+import { HeroTitle, HeroSubtitle, HeroButton, HeroImg } from '../src/index.js'
 import TitleH2 from '../src/elements/title-h2/component'
 import SubtitleH3 from '../src/elements/subtitle-h3/component'
+import CardHeader from '../src/elements/card-header/component'
 
 addDecorator((story, context) => withInfo('common info')(story)(context))
 addDecorator((story) => <Router history={history}>{story()}</Router>)
@@ -89,4 +90,8 @@ storiesOf('elements/Title-h2', module)
 storiesOf('elements/subtitle-h3', module)
   .add('H3 - Subtitle', () => (
     <SubtitleH3>Estos son los proyectos</SubtitleH3>
+  ))
+storiesOf('elements/card-header', module)
+  .add('Card header', () => (
+    <CardHeader img={'https://i.ytimg.com/vi/US8BmC2ZeBE/hqdefault.jpg'} />
   ))
