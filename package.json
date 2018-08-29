@@ -26,6 +26,7 @@
   "homepage": "https://github.com/democracyos/ui#readme",
   "devDependencies": {
     "@storybook/addon-info": "^3.4.10",
+    "@storybook/addon-notes": "^3.4.10",
     "@storybook/react": "^3.2.3",
     "babel-cli": "^6.24.1",
     "babel-core": "^6.25.0",

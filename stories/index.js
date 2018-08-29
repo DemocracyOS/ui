@@ -5,6 +5,7 @@ import { storiesOf } from '@storybook/react'
 import { addDecorator } from '@storybook/react'
 import { action } from '@storybook/addon-actions'
 import { withInfo } from '@storybook/addon-info'
+import { withNotes } from '@storybook/addon-notes'
 import '../src/index.css'
 import NavBarTitle from '../src/elements/navbar-title/component'
 
