@@ -1,51 +1,41 @@
 @font-face {
-  font-family: OpenSans-Bold;
-  src: url(./fonts/OpenSans-Bold.ttf);
+  font-family: Inter-UI-Black;
+  src: url('./fonts/Inter-UI/Inter-UI-Black.woff');
 }
 
 @font-face {
-  font-family: OpenSans-BoldItalic;
-  src: url(./fonts/OpenSans-BoldItalic.ttf);
+  font-family: Inter-UI-BlackItalic;
+  src: url('./fonts/Inter-UI/Inter-UI-BlackItalic.woff');
 }
 
 @font-face {
-  font-family: OpenSans-ExtraBold;
-  src: url(./fonts/OpenSans-ExtraBold.ttf);
+  font-family: Inter-UI-Bold;
+  src: url('./fonts/Inter-UI/Inter-UI-Bold.woff');
 }
 
 @font-face {
-  font-family: OpenSans-BoldItalic;
-  src: url(./fonts/OpenSans-ExtraBoldItalic.ttf);
+  font-family: Inter-UI-BoldItalic;
+  src: url('./fonts/Inter-UI/Inter-UI-BoldItalic.woff');
 }
 
 @font-face {
-  font-family: OpenSans-Italic;
-  src: url(./fonts/OpenSans-Italic.ttf);
+  font-family: Inter-UI-Italic;
+  src: url('./fonts/Inter-UI/Inter-UI-Italic.woff');
 }
 
 @font-face {
-  font-family: OpenSans-Light;
-  src: url(./fonts/OpenSans-Light.ttf);
+  font-family: Inter-UI-Medium;
+  src: url('./fonts/Inter-UI/Inter-UI-Medium.woff');
 }
 
 @font-face {
-  font-family: OpenSans-LightItalic;
-  src: url(./fonts/OpenSans-LightItalic.ttf);
+  font-family: Inter-UI-MediumItalic;
+  src: url('./fonts/Inter-UI/Inter-UI-MediumItalic.woff');
 }
 
 @font-face {
-  font-family: OpenSans-Regular;
-  src: url(./fonts/OpenSans-Regular.ttf);
-}
-
-@font-face {
-  font-family: OpenSans-SemiBold;
-  src: url(./fonts/OpenSans-SemiBold.ttf);
-}
-
-@font-face {
-  font-family: OpenSans-SemiBoldItalic;
-  src: url(./fonts/OpenSans-SemiBoldItalic.ttf);
+  font-family: Inter-UI-Regular;
+  src: url('./fonts/Inter-UI/Inter-UI-Regular.woff');
 }
 
 :root {
@@ -59,17 +49,15 @@
   --warning: #E86062;
 
   /* Fonts */
-  --regular: 'OpenSans-Regular';
-  --bold: 'OpenSans-Bold';
-  --bold-italic: 'OpenSans-BoldItalic';
-  --extra-bold: 'OpenSans-ExtraBold';
-  --extra-bold-italic: 'OpenSans-ExtraBoldItalic';
-  --italic: 'OpenSans-Italic';
-  --light: 'OpenSans-Light';
-  --light-italic: 'OpenSans-LightItalic';
-  --semi-bold: 'OpenSans-SemiBold';
-  --semi-bold-italic: 'OpenSans-SemiBoldItalic';
-
+  --regular: 'Inter-UI-Regular';
+  --black: 'Inter-UI-Black';
+  --black-italic: 'Inter-UI-BlackItalic';
+  --bold: 'Inter-UI-Bold';
+  --bold-italic: 'Inter-UI-BoldItalic';
+  --italic: 'Inter-UI-Italic';
+  --medium: 'Inter-UI-Medium';
+  --medium-italic: 'Inter-UI-MediumItalic';
+  
   font-size: 10px;
 }
 
@@ -79,5 +67,9 @@ body {
   width: 100%;
   background-color: var(--white);
   color: var(--black);
-  font-family: var(--regular), 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: var(--regular), sans-serif;
+}
+
+a {
+  text-decoration: none;
 }
