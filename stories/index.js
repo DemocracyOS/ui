@@ -11,6 +11,11 @@ import NavBarTitle from '../src/elements/navbar-title/component'
 
 addDecorator((story, context) => withInfo('common info')(story)(context))
 addDecorator((story) => <Router history={history}>{story()}</Router>)
+addDecorator((story) => (
+  <div style={{ textAlign: 'center', 'margin-top': '20px' }}>
+    {story()}
+  </div>
+))
 
 const history = createMemoryHistory()
 
