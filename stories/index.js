@@ -10,6 +10,8 @@ import '../src/index.css'
 import NavBarTitle from '../src/elements/navbar-title/component'
 import UserLink from '../src/elements/user-link/component'
 import UserBar from '../src/components/user-bar/component'
+import LinkbarLink from '../src/elements/linkbar-link/component'
+import Linkbar from '../src/components/linkbar/component'
 
 addDecorator((story, context) => withInfo('common info')(story)(context))
 addDecorator((story) => <Router history={history}>{story()}</Router>)
@@ -40,4 +42,18 @@ storiesOf('elements/UserLink', module)
 storiesOf('components/UserBar', module)
   .add('UserBar', () => (
     <UserBar links={[{ name: 'Create account', url: '/' }, { name: 'Log in', url: '/' }]} />
+  ))
+
+storiesOf('elements/linkbar-Link', module)
+  .add('LinkbarLink', () => (
+    <LinkbarLink name='Inicio' url='/' />
+  ))
+
+storiesOf('components/linkbar', module)
+  .add('Linkbar', () => (
+    <Linkbar links={[
+      { name: 'Inicio', url: '/' },
+      { name: 'Proyectos', url: '/' },
+      { name: 'Cómo participar', url: '/' },
+      { name: 'La propuesta', url: '/' }]} />
   ))
