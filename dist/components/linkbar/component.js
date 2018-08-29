@@ -4,7 +4,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _templateObject = _taggedTemplateLiteral(['\n  width: 600px;\n  display:flex;\n  flex-direction:row;\n  align-items:center;\n  list-style:none;\n  padding-left:0;\n'], ['\n  width: 600px;\n  display:flex;\n  flex-direction:row;\n  align-items:center;\n  list-style:none;\n  padding-left:0;\n']);
+var _templateObject = _taggedTemplateLiteral(['\n  width: 600px;\n  display:flex;\n  flex-direction:row;\n  align-items:center;\n  list-style:none;\n  padding-left:0;\n  > a {\n    color: #192a34;\n    display: inline-block;\n    padding: 10px 20px;\n    font-size: 1.6rem;\n  }\n'], ['\n  width: 600px;\n  display:flex;\n  flex-direction:row;\n  align-items:center;\n  list-style:none;\n  padding-left:0;\n  > a {\n    color: #192a34;\n    display: inline-block;\n    padding: 10px 20px;\n    font-size: 1.6rem;\n  }\n']);
 
 var _styledComponents = require('styled-components');
 
@@ -18,30 +18,22 @@ var _propTypes = require('prop-types');
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
-var _component = require('../../elements/linkbar-link/component');
-
-var _component2 = _interopRequireDefault(_component);
-
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
 
-var Wrapper = _styledComponents2.default.ul(_templateObject);
+var Wrapper = _styledComponents2.default.div(_templateObject);
 var Linkbar = function Linkbar(_ref) {
-  var links = _ref.links;
+  var children = _ref.children;
   return _react2.default.createElement(
     Wrapper,
     null,
-    links.map(function (_ref2, i) {
-      var name = _ref2.name,
-          url = _ref2.url;
-      return _react2.default.createElement(_component2.default, { name: name, url: url });
-    })
+    children
   );
 };
 
 Linkbar.propTypes = {
-  links: _propTypes2.default.array.isRequired
+  children: _propTypes2.default.oneOfType([_propTypes2.default.arrayOf(_propTypes2.default.node), _propTypes2.default.node]).isRequired
 };
 
 exports.default = Linkbar;
