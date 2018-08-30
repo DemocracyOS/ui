@@ -4,14 +4,13 @@ import styled from 'styled-components'
 import UserAvatar from '../user-avatar/component'
 
 const Wrapper = styled.div`
-width:280px;
+width:320px;
 margin-top:-70px;
 background-color:#fff;
 display:flex;
 flex-direction:column;
 justify-content:space-between;
 height:177px;
-border:1px solid red;
 padding:12px;
 box-sizing: border-box;
 `

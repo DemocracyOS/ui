@@ -19,15 +19,23 @@ box-sizing: border-box;
 
 `
 
-const Card = ({ img }) => (
+const Card = ({ img, commentaryItems, limitDate, tagTitle, title, avatarImg, name, charge }) => (
   <CardContainer>
     <CardHeader img={img} />
-    <CardContent />
-    <CardSocial />
+    <CardContent tagTitle={tagTitle} title={title} avatarImg={avatarImg} name={name} charge={charge} />
+    <CardSocial commentaryItems={commentaryItems} limitDate={limitDate} />
   </CardContainer>
 )
 
 Card.propTypes = {
-  img: PropTypes.string
+  img: PropTypes.string,
+  commentaryItems: PropTypes.string.isRequired,
+  limitDate: PropTypes.date,
+  title: PropTypes.string.isRequired,
+  tagTitle: PropTypes.string.isRequired,
+  avatarImg: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+  charge: PropTypes.string.isRequired
+
 }
 export default Card
