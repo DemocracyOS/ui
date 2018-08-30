@@ -15,6 +15,7 @@ import HeroLeftColumn from './components/hero-left-column/component'
 import Section from './layouts/section/component'
 import Navbar from './layouts/navbar/component'
 import Hero from './layouts/hero/component'
+import Footer from './layouts/footer/component'
 
 // Export all components
 export {
@@ -30,5 +31,6 @@ export {
   Section,
   Navbar,
   HeroLeftColumn,
-  Hero
+  Hero,
+  Footer
 }

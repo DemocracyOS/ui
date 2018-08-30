@@ -16,6 +16,7 @@ import TitleH2 from '../src/elements/title-h2/component'
 import SubtitleH3 from '../src/elements/subtitle-h3/component'
 import Section from '../src/layouts/section/component'
 import Navbar from '../src/layouts/navbar/component'
+import Footer from '../src/layouts/footer/component'
 
 addDecorator((story, context) => withInfo('common info')(story)(context))
 addDecorator((story) => <Router history={history}>{story()}</Router>)
@@ -121,7 +122,7 @@ storiesOf('layouts/navbar', module)
     </Navbar>
   ))
 
-  storiesOf('layouts/hero', module)
+storiesOf('layouts/hero', module)
   .add('Hero', () => (
     <Hero>
       <HeroLeftColumn>
@@ -130,5 +131,10 @@ storiesOf('layouts/navbar', module)
         <HeroButton>Como participo</HeroButton>
       </HeroLeftColumn>
       <HeroImg />
-  </Hero>
+    </Hero>
+  ))
+
+storiesOf('layouts/footer', module)
+  .add('Footer', () => (
+    <Footer />
   ))
