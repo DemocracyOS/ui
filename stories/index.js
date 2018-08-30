@@ -18,6 +18,7 @@ import SubtitleH3 from '../src/elements/subtitle-h3/component'
 import CardHeader from '../src/elements/card-header/component'
 import UserAvatar from '../src/elements/user-avatar/component'
 import CardContent from '../src/elements/card-content/component'
+import CardSocial from '../src/elements/card-social/component'
 import Card from '../src/components/card/component'
 
 addDecorator((story, context) => withInfo('common info')(story)(context))
@@ -109,7 +110,7 @@ storiesOf('elements/card-content', module)
 
 storiesOf('elements/card-social', module)
   .add('Card content', () => (
-    <CardContent title={'Acceso a la educacion pública'} tagTitle={'libertad de expresión'} avatarImg={'https://i.ytimg.com/vi/US8BmC2ZeBE/hqdefault.jpg'} name={'Alvarez Rodriguez, María C'} charge={'Frente para la victoria - PJ'} />
+    <CardSocial commentaryItems={'33'} limitDate={'22/10/1990'} />
   ))
 
 storiesOf('components/card', module)

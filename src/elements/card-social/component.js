@@ -25,13 +25,15 @@ text-transform:uppercase;
 const LimitDate = styled.div`
 font-size:1.2rem;
 `
-
+const Span = styled.span`
+  font-family: var(--bold);
+`
 const Social = ({ commentaryItems, limitDate }) => (
   <Wrapper>
     <CommentaryItems>
-      {commentaryItems} {commentaryItems === 1 ? ' Comentario' : ' Comentarios'}
+      <Span> {commentaryItems}</Span> {commentaryItems === 1 ? ' Comentario' : ' Comentarios'}
     </CommentaryItems>
-    <LimitDate>Aportes habilidatos hasta: {limitDate}</LimitDate>
+    <LimitDate><span>Aportes habilidatos hasta: </span>{limitDate}</LimitDate>
   </Wrapper>
 )
 
