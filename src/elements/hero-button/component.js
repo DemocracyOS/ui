@@ -8,6 +8,13 @@ const StyledButton = styled.button`
   font-size: 1.8rem;
   color: #5c97bc;
   border-style: none;
-`
 
-export default StyledButton
+  color: ${(props) => props.viewmore ? '#2d4b5e' : 'var(--secondary-color)'};
+  border: ${(props) => props.viewmore ? '2px solid var(--primary-color)' : 'none'};
+  `
+
+const styledButton = (props) => (
+  <StyledButton {...props} />
+)
+
+export default styledButton
