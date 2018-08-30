@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import PropTypes from 'prop-types'
 
 const StyledSection = styled.section`
     margin-left: 5.5rem;
@@ -22,5 +23,12 @@ const Section = ({ children }) => (
     { children }
   </StyledSection>
 )
+
+Section.propTypes = {
+  children: PropTypes.oneOfType([
+    PropTypes.arrayOf(PropTypes.node),
+    PropTypes.node
+  ]).isRequired
+}
 
 export default Section

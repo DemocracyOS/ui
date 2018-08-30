@@ -12,6 +12,7 @@ import LinkBar from './components/linkbar/component'
 import UserBar from './components/user-bar/component'
 // Import layouts
 import Section from './layouts/section/component'
+import Navbar from './layouts/section/component'
 
 // Export all components
 export {
@@ -24,5 +25,6 @@ export {
   SubtitleH3,
   TitleH2,
   LinkBar,
-  Section
+  Section,
+  Navbar
 }

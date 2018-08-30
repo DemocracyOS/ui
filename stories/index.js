@@ -15,6 +15,7 @@ import { HeroTitle, HeroSubtitle, HeroButton, HeroImg } from '../src/index.js'
 import TitleH2 from '../src/elements/title-h2/component'
 import SubtitleH3 from '../src/elements/subtitle-h3/component'
 import Section from '../src/layouts/section/component'
+import Navbar from '../src/layouts/navbar/component'
 
 addDecorator((story, context) => withInfo('common info')(story)(context))
 addDecorator((story) => <Router history={history}>{story()}</Router>)
@@ -99,4 +100,23 @@ storiesOf('layouts/section', module)
         <SubtitleH3>I'm an even section</SubtitleH3>
       </Section>
     </div>
+  ))
+
+storiesOf('layouts/navbar', module)
+  .add('Navbar', () => (
+    <Navbar>
+      <NavBarTitle>
+        <Link to='/'><a>Co-Legis</a></Link>
+      </NavBarTitle>
+      <Linkbar>
+        <Link to='/'><a>Inicio</a></Link>
+        <Link to='/'><a>Proyectos</a></Link>
+        <Link to='/'><a>Cómo participar</a></Link>
+        <Link to='/'><a>La Propuesta</a></Link>
+      </Linkbar>
+      <UserBar>
+        <Link to='/'><a>Crear cuenta</a></Link>
+        <Link to='/'><a>Ingresar</a></Link>
+      </UserBar>
+    </Navbar>
   ))
