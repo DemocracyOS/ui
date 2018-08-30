@@ -9,19 +9,19 @@ var _react = require('react');
 
 var _react2 = _interopRequireDefault(_react);
 
-var _component = require('../src/elements/card-header/component');
+var _component = require('./src/elements/card-header/component');
 
 var _component2 = _interopRequireDefault(_component);
 
-var _component3 = require('../src/elements/user-avatar/component');
+var _component3 = require('./src/elements/user-avatar/component');
 
 var _component4 = _interopRequireDefault(_component3);
 
-var _component5 = require('../src/elements/card-content/component');
+var _component5 = require('./src/elements/card-content/component');
 
 var _component6 = _interopRequireDefault(_component5);
 
-var _component7 = require('../src/elements/card-social/component');
+var _component7 = require('./elements/card-social/component');
 
 var _component8 = _interopRequireDefault(_component7);
 
@@ -65,7 +65,7 @@ var _component27 = require('./components/hero-left-column/component');
 
 var _component28 = _interopRequireDefault(_component27);
 
-var _component29 = require('../src/components/card/component');
+var _component29 = require('./components/card/component');
 
 var _component30 = _interopRequireDefault(_component29);
 
