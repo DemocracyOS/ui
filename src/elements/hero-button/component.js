@@ -11,6 +11,7 @@ const StyledButton = styled.button`
 
   color: ${(props) => props.viewmore ? '#2d4b5e' : 'var(--secondary-color)'};
   border: ${(props) => props.viewmore ? '2px solid var(--primary-color)' : 'none'};
+  align-self: ${(props) => props.viewmore ? 'center' : 'auto'};
   `
 
 const styledButton = (props) => (
