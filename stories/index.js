@@ -11,9 +11,10 @@ import '../src/index.css'
 import NavBarTitle from '../src/elements/navbar-title/component'
 import UserBar from '../src/components/user-bar/component'
 import Linkbar from '../src/components/linkbar/component'
-import  { HeroTitle, HeroSubtitle, HeroButton, HeroImg } from '../src/index.js'
+import { HeroTitle, HeroSubtitle, HeroButton, HeroImg } from '../src/index.js'
 import TitleH2 from '../src/elements/title-h2/component'
 import SubtitleH3 from '../src/elements/subtitle-h3/component'
+import Section from '../src/layouts/section/component'
 
 addDecorator((story, context) => withInfo('common info')(story)(context))
 addDecorator((story) => <Router history={history}>{story()}</Router>)
@@ -84,4 +85,18 @@ storiesOf('elements/Title-h2', module)
 storiesOf('elements/subtitle-h3', module)
   .add('H3 - Subtitle', () => (
     <SubtitleH3>Estos son los proyectos</SubtitleH3>
+  ))
+
+storiesOf('layouts/section', module)
+  .add('Section', () => (
+    <div>
+      <Section>
+        <TitleH2>Odd section</TitleH2>
+        <SubtitleH3>I'm an odd section</SubtitleH3>
+      </Section>
+      <Section>
+        <TitleH2>Even section</TitleH2>
+        <SubtitleH3>I'm an even section</SubtitleH3>
+      </Section>
+    </div>
   ))
