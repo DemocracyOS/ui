@@ -10,9 +10,11 @@ import TitleH2 from './elements/title-h2/component'
 // Import components
 import LinkBar from './components/linkbar/component'
 import UserBar from './components/user-bar/component'
+import HeroLeftColumn from './components/hero-left-column/component'
 // Import layouts
 import Section from './layouts/section/component'
-import Navbar from './layouts/section/component'
+import Navbar from './layouts/navbar/component'
+import Hero from './layouts/hero/component'
 
 // Export all components
 export {
@@ -26,5 +28,7 @@ export {
   TitleH2,
   LinkBar,
   Section,
-  Navbar
+  Navbar,
+  HeroLeftColumn,
+  Hero
 }

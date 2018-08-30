@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import PropTypes from 'prop-types'
 
 const StyledLeftColumn = styled.div`
-  width: 50%;
+  max-width: 62.9rem;
   > button {
     margin: 37px 0;
   }

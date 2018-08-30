@@ -11,7 +11,7 @@ import '../src/index.css'
 import NavBarTitle from '../src/elements/navbar-title/component'
 import UserBar from '../src/components/user-bar/component'
 import Linkbar from '../src/components/linkbar/component'
-import { HeroTitle, HeroSubtitle, HeroButton, HeroImg } from '../src/index.js'
+import { HeroTitle, HeroSubtitle, HeroButton, HeroImg, HeroLeftColumn, Hero } from '../src/index.js'
 import TitleH2 from '../src/elements/title-h2/component'
 import SubtitleH3 from '../src/elements/subtitle-h3/component'
 import Section from '../src/layouts/section/component'
@@ -20,7 +20,7 @@ import Navbar from '../src/layouts/navbar/component'
 addDecorator((story, context) => withInfo('common info')(story)(context))
 addDecorator((story) => <Router history={history}>{story()}</Router>)
 addDecorator((story) => (
-  <div style={{ textAlign: 'center', 'margin-top': '20px' }}>
+  <div style={{ 'display': 'flex', 'justifyContent': 'center', 'marginTop': '20px', 'flexWrap': 'wrap' }}>
     {story()}
   </div>
 ))
@@ -119,4 +119,16 @@ storiesOf('layouts/navbar', module)
         <Link to='/'><a>Ingresar</a></Link>
       </UserBar>
     </Navbar>
+  ))
+
+  storiesOf('layouts/hero', module)
+  .add('Hero', () => (
+    <Hero>
+      <HeroLeftColumn>
+        <HeroTitle>Ciudadanos y Representantes juntos para crear mejores leyes.</HeroTitle>
+        <HeroSubtitle>Sus sugerencias son importantes y serán tenidas en cuenta  por los especialistas y parlamentaristas.</HeroSubtitle>
+        <HeroButton>Como participo</HeroButton>
+      </HeroLeftColumn>
+      <HeroImg />
+  </Hero>
   ))
