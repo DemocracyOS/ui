@@ -33,7 +33,7 @@ const Social = ({ commentaryItems, limitDate }) => (
     <CommentaryItems>
       <Span> {commentaryItems}</Span> {commentaryItems === 1 ? ' Comentario' : ' Comentarios'}
     </CommentaryItems>
-    <LimitDate><span>Aportes habilidatos hasta: </span>{limitDate}</LimitDate>
+    <LimitDate><span>Aportes habilitados hasta: </span>{limitDate}</LimitDate>
   </Wrapper>
 )
 
