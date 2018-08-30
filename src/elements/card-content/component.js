@@ -27,6 +27,7 @@ font-size:2.4rem;
 color:#000;
 text-align:left;
 font-family: var(--bold);
+padding-bottom:2rem;
 `
 const TextWrapper = styled.div`
 
