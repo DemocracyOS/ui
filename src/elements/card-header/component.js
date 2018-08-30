@@ -8,6 +8,8 @@ height: 126px;
 background-color: #a4cee8;
 background-image: url('${props => props.img}');
 overflow:hidden;
+background-size: cover;
+background-position: center;
 `
 const CardHeader = ({ img }) => (
   <Wrapper img={img} />

@@ -1,0 +1,55 @@
+import React from 'react'
+import PropTypes from 'prop-types'
+import styled from 'styled-components'
+import UserAvatar from '../user-avatar/component'
+
+const Wrapper = styled.div`
+width:280px;
+margin-top:-70px;
+background-color:#fff;
+display:flex;
+flex-direction:column;
+justify-content:space-between;
+height:177px;
+border:1px solid red;
+padding:12px;
+box-sizing: border-box;
+`
+const TagTitle = styled.div`
+font-size:1.2rem;
+text-transform:uppercase;
+text-align:left;
+color:var(--primary-color);
+padding-bottom:1rem;
+`
+
+const Title = styled.div`
+font-size:2.4rem;
+color:#000;
+text-align:left;
+font-family: var(--bold);
+`
+const TextWrapper = styled.div`
+
+`
+
+const CardContent = ({ tagTitle, title, avatarImg, name, charge }) => (
+  <Wrapper>
+    <TextWrapper>
+      <TagTitle>{tagTitle}</TagTitle>
+      <Title>{title} </Title>
+    </TextWrapper>
+
+    <UserAvatar avatarImg={avatarImg} name={name} charge={charge} />
+  </Wrapper>
+)
+
+CardContent.propTypes = {
+  title: PropTypes.string.isRequired,
+  tagTitle: PropTypes.string.isRequired,
+  avatarImg: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+  charge: PropTypes.string.isRequired
+}
+
+export default CardContent

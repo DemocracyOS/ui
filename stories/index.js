@@ -16,6 +16,9 @@ import { HeroTitle, HeroSubtitle, HeroButton, HeroImg } from '../src/index.js'
 import TitleH2 from '../src/elements/title-h2/component'
 import SubtitleH3 from '../src/elements/subtitle-h3/component'
 import CardHeader from '../src/elements/card-header/component'
+import UserAvatar from '../src/elements/user-avatar/component'
+import CardContent from '../src/elements/card-content/component'
+import Card from '../src/components/card/component'
 
 addDecorator((story, context) => withInfo('common info')(story)(context))
 addDecorator((story) => <Router history={history}>{story()}</Router>)
@@ -94,4 +97,22 @@ storiesOf('elements/subtitle-h3', module)
 storiesOf('elements/card-header', module)
   .add('Card header', () => (
     <CardHeader img={'https://i.ytimg.com/vi/US8BmC2ZeBE/hqdefault.jpg'} />
+  ))
+storiesOf('elements/user-avatar', module)
+  .add('User avatar', () => (
+    <UserAvatar avatarImg={'https://i.ytimg.com/vi/US8BmC2ZeBE/hqdefault.jpg'} name={'Alvarez Rodriguez, María C'} charge={'Frente para la victoria - PJ'} />
+  ))
+storiesOf('elements/card-content', module)
+  .add('Card content', () => (
+    <CardContent title={'Acceso a la educacion pública'} tagTitle={'libertad de expresión'} avatarImg={'https://i.ytimg.com/vi/US8BmC2ZeBE/hqdefault.jpg'} name={'Alvarez Rodriguez, María C'} charge={'Frente para la victoria - PJ'} />
+  ))
+
+storiesOf('elements/card-social', module)
+  .add('Card content', () => (
+    <CardContent title={'Acceso a la educacion pública'} tagTitle={'libertad de expresión'} avatarImg={'https://i.ytimg.com/vi/US8BmC2ZeBE/hqdefault.jpg'} name={'Alvarez Rodriguez, María C'} charge={'Frente para la victoria - PJ'} />
+  ))
+
+storiesOf('components/card', module)
+  .add('Card', () => (
+    <Card title={'Acceso a la educacion pública'} tagTitle={'libertad de expresión'} avatarImg={'https://i.ytimg.com/vi/US8BmC2ZeBE/hqdefault.jpg'} name={'Alvarez Rodriguez, María C'} charge={'Frente para la victoria - PJ'} />
   ))
