@@ -30,7 +30,7 @@ const Card = ({ img, commentaryItems, limitDate, tagTitle, title, avatarImg, nam
 Card.propTypes = {
   img: PropTypes.string,
   commentaryItems: PropTypes.string.isRequired,
-  limitDate: PropTypes.date,
+  limitDate: PropTypes.string,
   title: PropTypes.string.isRequired,
   tagTitle: PropTypes.string.isRequired,
   avatarImg: PropTypes.string.isRequired,

@@ -3,35 +3,41 @@ import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
 const Wrapper = styled.div`
-width:100%;
 height:85px;
-border-top: 1px solid var(--gray);
-font-size:1.3rem;
-font-family: var(--bold);
+border-top: 1px solid #e9e9e9;
+font-size:1.4rem;
 display:flex;
-align-items:center;
+flex-direction:column;
+align-items:flex-start;
+justify-content:center;
 box-sizing:border-box;
-padding-left:20px;
-color: var(--primary-color);
+color: #2d4b5e;
 font-size:1.6em;
 box-sizing:border-box;
+margin:0px 20px 0px 20px;
+box-sizing:border-box;
 `
-const CommentaryItems = styled.div``
+const CommentaryItems = styled.div`
+padding-bottom:1.3rem;
+text-transform:uppercase;
+`
 
-const LimitDate = styled.div``
+const LimitDate = styled.div`
+font-size:1.2rem;
+`
 
 const Social = ({ commentaryItems, limitDate }) => (
   <Wrapper>
     <CommentaryItems>
       {commentaryItems} {commentaryItems === 1 ? ' Comentario' : ' Comentarios'}
     </CommentaryItems>
-    <LimitDate>{limitDate}</LimitDate>
+    <LimitDate>Aportes habilidatos hasta: {limitDate}</LimitDate>
   </Wrapper>
 )
 
 Social.propTypes = {
   commentaryItems: PropTypes.string.isRequired,
-  limitDate: PropTypes.date
+  limitDate: PropTypes.string
 }
 
 export default Social

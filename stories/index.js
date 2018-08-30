@@ -114,5 +114,5 @@ storiesOf('elements/card-social', module)
 
 storiesOf('components/card', module)
   .add('Card', () => (
-    <Card title={'Acceso a la educacion pública'} tagTitle={'libertad de expresión'} avatarImg={'https://i.ytimg.com/vi/US8BmC2ZeBE/hqdefault.jpg'} name={'Alvarez Rodriguez, María C'} charge={'Frente para la victoria - PJ'} />
+    <Card img={'https://i.ytimg.com/vi/US8BmC2ZeBE/hqdefault.jpg'} title={'Acceso a la educacion pública'} tagTitle={'libertad de expresión'} avatarImg={'https://i.ytimg.com/vi/US8BmC2ZeBE/hqdefault.jpg'} name={'Alvarez Rodriguez, María C'} charge={'Frente para la victoria - PJ'} commentaryItems={'33'} limitDate={'22/10/1990'} />
   ))
