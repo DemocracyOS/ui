@@ -68,6 +68,11 @@ body {
   background-color: var(--white);
   color: var(--black);
   font-family: var(--regular), sans-serif;
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
 }
 
 a {
