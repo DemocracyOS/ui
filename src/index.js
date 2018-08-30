@@ -1,9 +1,9 @@
 import React from 'react'
 // Import elements
-import CardHeader from '../src/elements/card-header/component'
-import UserAvatar from '../src/elements/user-avatar/component'
-import CardContent from '../src/elements/card-content/component'
-import CardSocial from '../src/elements/card-social/component'
+import CardHeader from './src/elements/card-header/component'
+import UserAvatar from './src/elements/user-avatar/component'
+import CardContent from './src/elements/card-content/component'
+import CardSocial from './elements/card-social/component'
 import NavBarTitle from './elements/navbar-title/component'
 import HeroTitle from './elements/hero-title/component'
 import HeroSubtitle from './elements/hero-subtitle/component'
@@ -15,7 +15,7 @@ import TitleH2 from './elements/title-h2/component'
 import LinkBar from './components/linkbar/component'
 import UserBar from './components/user-bar/component'
 import HeroLeftColumn from './components/hero-left-column/component'
-import Card from '../src/components/card/component'
+import Card from './components/card/component'
 
 // Import layouts
 import Section from './layouts/section/component'
