@@ -1,8 +1,8 @@
 import React from 'react'
 // Import elements
-import CardHeader from './src/elements/card-header/component'
-import UserAvatar from './src/elements/user-avatar/component'
-import CardContent from './src/elements/card-content/component'
+import CardHeader from './elements/card-header/component'
+import UserAvatar from './elements/user-avatar/component'
+import CardContent from './elements/card-content/component'
 import CardSocial from './elements/card-social/component'
 import NavBarTitle from './elements/navbar-title/component'
 import HeroTitle from './elements/hero-title/component'
