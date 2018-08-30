@@ -4,7 +4,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _templateObject = _taggedTemplateLiteral(['\n  margin-left: 3.4rem;\n  width: 61.6rem;\n  height: 31.5rem;\n  background-color: #5c97bc;\n  border: solid 1px #979797;\n'], ['\n  margin-left: 3.4rem;\n  width: 61.6rem;\n  height: 31.5rem;\n  background-color: #5c97bc;\n  border: solid 1px #979797;\n']);
+var _templateObject = _taggedTemplateLiteral(['\n  width: 100%;\n  height: 33.6rem;\n  background-color: var(--white);\n\n'], ['\n  width: 100%;\n  height: 33.6rem;\n  background-color: var(--white);\n\n']);
 
 var _react = require('react');
 
@@ -18,6 +18,12 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
 
-var HeroImg = _styledComponents2.default.img(_templateObject);
+// import PropTypes from 'prop-types'
 
-exports.default = HeroImg;
+var StyledFooter = _styledComponents2.default.footer(_templateObject);
+
+var Footer = function Footer() {
+  return _react2.default.createElement(StyledFooter, null);
+};
+
+exports.default = Footer;
