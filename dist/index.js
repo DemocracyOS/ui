@@ -9,15 +9,15 @@ var _react = require('react');
 
 var _react2 = _interopRequireDefault(_react);
 
-var _component = require('./src/elements/card-header/component');
+var _component = require('./elements/card-header/component');
 
 var _component2 = _interopRequireDefault(_component);
 
-var _component3 = require('./src/elements/user-avatar/component');
+var _component3 = require('./elements/user-avatar/component');
 
 var _component4 = _interopRequireDefault(_component3);
 
-var _component5 = require('./src/elements/card-content/component');
+var _component5 = require('./elements/card-content/component');
 
 var _component6 = _interopRequireDefault(_component5);
 
