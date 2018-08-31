@@ -19,23 +19,34 @@ box-sizing: border-box;
 
 `
 
-const Card = ({ img, commentaryItems, limitDate, tagTitle, title, avatarImg, name, charge }) => (
+const Card = ({ project }) => (
   <CardContainer>
-    <CardHeader img={img} />
-    <CardContent tagTitle={tagTitle} title={title} avatarImg={avatarImg} name={name} charge={charge} />
-    <CardSocial commentaryItems={commentaryItems} limitDate={limitDate} />
+    { project.img &&
+      <CardHeader img={project.img} />
+    }
+    <CardContent tagTitle={project.tagTitle}
+      title={project.title}
+      avatarImg={project.author.avatarImg}
+      name={project.author.name}
+      party={project.author.party} />
+    <CardSocial commentaries={project.commentaries}
+      limitDate={project.limitDate} />
   </CardContainer>
 )
 
 Card.propTypes = {
-  img: PropTypes.string,
-  commentaryItems: PropTypes.string.isRequired,
-  limitDate: PropTypes.string,
-  title: PropTypes.string.isRequired,
-  tagTitle: PropTypes.string.isRequired,
-  avatarImg: PropTypes.string.isRequired,
-  name: PropTypes.string.isRequired,
-  charge: PropTypes.string.isRequired
-
+  project: PropTypes.shape({
+    img: PropTypes.string,
+    commentaries: PropTypes.number.isRequired,
+    limitDate: PropTypes.string,
+    title: PropTypes.string.isRequired,
+    tagTitle: PropTypes.string.isRequired,
+    author: PropTypes.shape({
+      avatarImg: PropTypes.string.isRequired,
+      name: PropTypes.string.isRequired,
+      party: PropTypes.string.isRequired
+    }).isRequired
+  }).isRequired
 }
+
 export default Card

@@ -21,7 +21,7 @@ const Name = styled.div`
 color: #2d4b5e;
 font-size: 1.4rem;
 `
-const Charge = styled.div`
+const Party = styled.div`
 font-size:1.2rem;
 color: #2d4b5e;
 text-transform:uppercase;
@@ -33,12 +33,12 @@ display:flex;
 flex-direction:column;
 justify-content:space-between;
 `
-const UserAvatar = ({ avatarImg, name, charge }) => (
+const UserAvatar = ({ avatarImg, name, party }) => (
   <Wrapper>
     <Avatar avatarImg={avatarImg} />
     <TextWrapper>
       <Name>{name} </Name>
-      <Charge>{charge}</Charge>
+      <Party>{party}</Party>
     </TextWrapper>
   </Wrapper>
 )
@@ -46,7 +46,7 @@ const UserAvatar = ({ avatarImg, name, charge }) => (
 UserAvatar.propTypes = {
   name: PropTypes.string.isRequired,
   avatarImg: PropTypes.string.isRequired,
-  charge: PropTypes.string.isRequired
+  party: PropTypes.string.isRequired
 }
 
 export default UserAvatar
