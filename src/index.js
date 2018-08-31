@@ -22,6 +22,7 @@ import Section from './layouts/section/component'
 import Navbar from './layouts/navbar/component'
 import Hero from './layouts/hero/component'
 import Footer from './layouts/footer/component'
+import Grid from './layouts/grid/component'
 
 // Export all components
 export {
@@ -43,5 +44,6 @@ export {
   UserAvatar,
   CardContent,
   CardSocial,
-  Card
+  Card,
+  Grid
 }

@@ -6,7 +6,7 @@ const Wrapper = styled.div`
 width: 368px;
 height: 126px;
 background-color: #a4cee8;
-background-image: url('${props => props.img}');
+background-image: url('${(props) => props.img}');
 overflow:hidden;
 background-size: cover;
 background-position: center;
