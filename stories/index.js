@@ -28,7 +28,6 @@ import SocialBar from '../src/components/social-bar/component'
 import P from '../src/elements/footer-text/component'
 import FooterTextWrapper from '../src/elements/footer-text-wrapper/component'
 
-
 addDecorator((story, context) => withInfo('common info')(story)(context))
 addDecorator((story) => <Router history={history}>{story()}</Router>)
 addDecorator((story) => (
@@ -205,8 +204,8 @@ storiesOf('layouts/footer', module)
       </Bar>
 
       <FooterTextWrapper>
-      <P>Honorable Cámara de diputados de la Nación Argentina | Congreso de la Nación Argentina | Av. Rivadavia 1864 | Ciudad Autónoma de Bs. As. (C.P. C1033AAV) | (54-11) 4127-7100</P>
-      <P>La información contenida en este sitio es de dominio público y puede ser utilizada libremente. Se solicita citar la fuente.</P>
+        <P>Honorable Cámara de diputados de la Nación Argentina | Congreso de la Nación Argentina | Av. Rivadavia 1864 | Ciudad Autónoma de Bs. As. (C.P. C1033AAV) | (54-11) 4127-7100</P>
+        <P>La información contenida en este sitio es de dominio público y puede ser utilizada libremente. Se solicita citar la fuente.</P>
       </FooterTextWrapper>
 
     </Footer>
