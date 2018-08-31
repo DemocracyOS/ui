@@ -1,5 +1,8 @@
 import React from 'react'
 // Import elements
+import FooterBar from '../src/elements/footer-navbar/component'
+import P from '../src/elements/footer-text/component'
+import FooterTextWrapper from '../src/elements/footer-text-wrapper/component'
 import CardHeader from './elements/card-header/component'
 import UserAvatar from './elements/user-avatar/component'
 import CardContent from './elements/card-content/component'
@@ -11,6 +14,7 @@ import HeroButton from './elements/hero-button/component'
 import HeroImg from './elements/hero-img/component'
 import SubtitleH3 from './elements/subtitle-h3/component'
 import TitleH2 from './elements/title-h2/component'
+
 // Import components
 import LinkBar from './components/linkbar/component'
 import UserBar from './components/user-bar/component'
@@ -45,5 +49,8 @@ export {
   CardContent,
   CardSocial,
   Card,
+  FooterBar,
+  P,
+  FooterTextWrapper,
   Grid
 }
