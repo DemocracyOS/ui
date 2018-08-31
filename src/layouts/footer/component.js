@@ -6,6 +6,9 @@ const StyledFooter = styled.footer`
   width: 100%;
   height: 33.6rem;
   background-color: var(--white);
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
 
 `
 

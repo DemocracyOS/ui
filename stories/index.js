@@ -25,6 +25,9 @@ import Card from '../src/components/card/component'
 import Bar from '../src/elements/footer-navbar/component'
 import SocialIcon from '../src/elements/social-icon/component'
 import SocialBar from '../src/components/social-bar/component'
+import P from '../src/elements/footer-text/component'
+import FooterTextWrapper from '../src/elements/footer-text-wrapper/component'
+
 
 addDecorator((story, context) => withInfo('common info')(story)(context))
 addDecorator((story) => <Router history={history}>{story()}</Router>)
@@ -199,7 +202,12 @@ storiesOf('layouts/footer', module)
         <Link to='/'><a>Contacto</a></Link>
         <Link to='/'><a>Preguntas Frecuentes</a></Link>
         <Link to='/'><a>Términos y condiiones</a></Link>
-
       </Bar>
+
+      <FooterTextWrapper>
+      <P>Honorable Cámara de diputados de la Nación Argentina | Congreso de la Nación Argentina | Av. Rivadavia 1864 | Ciudad Autónoma de Bs. As. (C.P. C1033AAV) | (54-11) 4127-7100</P>
+      <P>La información contenida en este sitio es de dominio público y puede ser utilizada libremente. Se solicita citar la fuente.</P>
+      </FooterTextWrapper>
+
     </Footer>
   ))
