@@ -3,7 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.Card = exports.CardSocial = exports.CardContent = exports.UserAvatar = exports.CardHeader = exports.Footer = exports.Hero = exports.HeroLeftColumn = exports.Navbar = exports.Section = exports.LinkBar = exports.TitleH2 = exports.SubtitleH3 = exports.HeroImg = exports.HeroButton = exports.HeroSubtitle = exports.HeroTitle = exports.UserBar = exports.NavBarTitle = undefined;
+exports.Grid = exports.Card = exports.CardSocial = exports.CardContent = exports.UserAvatar = exports.CardHeader = exports.Footer = exports.Hero = exports.HeroLeftColumn = exports.Navbar = exports.Section = exports.LinkBar = exports.TitleH2 = exports.SubtitleH3 = exports.HeroImg = exports.HeroButton = exports.HeroSubtitle = exports.HeroTitle = exports.UserBar = exports.NavBarTitle = undefined;
 
 var _react = require('react');
 
@@ -85,14 +85,15 @@ var _component37 = require('./layouts/footer/component');
 
 var _component38 = _interopRequireDefault(_component37);
 
+var _component39 = require('./layouts/grid/component');
+
+var _component40 = _interopRequireDefault(_component39);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 // Export all components
 
-
-// Import layouts
-
-// Import components
+// Import elements
 exports.NavBarTitle = _component10.default;
 exports.UserBar = _component26.default;
 exports.HeroTitle = _component12.default;
@@ -112,4 +113,8 @@ exports.UserAvatar = _component4.default;
 exports.CardContent = _component6.default;
 exports.CardSocial = _component8.default;
 exports.Card = _component30.default;
-// Import elements
+exports.Grid = _component40.default;
+
+// Import layouts
+
+// Import components

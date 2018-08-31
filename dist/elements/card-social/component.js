@@ -31,7 +31,7 @@ var CommentaryItems = _styledComponents2.default.div(_templateObject2);
 var LimitDate = _styledComponents2.default.div(_templateObject3);
 var Span = _styledComponents2.default.span(_templateObject4);
 var Social = function Social(_ref) {
-  var commentaryItems = _ref.commentaryItems,
+  var commentaries = _ref.commentaries,
       limitDate = _ref.limitDate;
   return _react2.default.createElement(
     Wrapper,
@@ -43,12 +43,12 @@ var Social = function Social(_ref) {
         Span,
         null,
         ' ',
-        commentaryItems
+        commentaries
       ),
       ' ',
-      commentaryItems === 1 ? ' Comentario' : ' Comentarios'
+      commentaries === 1 ? ' Comentario' : ' Comentarios'
     ),
-    _react2.default.createElement(
+    limitDate && _react2.default.createElement(
       LimitDate,
       null,
       _react2.default.createElement(
@@ -62,7 +62,7 @@ var Social = function Social(_ref) {
 };
 
 Social.propTypes = {
-  commentaryItems: _propTypes2.default.string.isRequired,
+  commentaries: _propTypes2.default.number.isRequired,
   limitDate: _propTypes2.default.string
 };
 

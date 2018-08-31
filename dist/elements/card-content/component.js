@@ -40,7 +40,7 @@ var CardContent = function CardContent(_ref) {
       title = _ref.title,
       avatarImg = _ref.avatarImg,
       name = _ref.name,
-      charge = _ref.charge;
+      party = _ref.party;
   return _react2.default.createElement(
     Wrapper,
     null,
@@ -59,7 +59,7 @@ var CardContent = function CardContent(_ref) {
         ' '
       )
     ),
-    _react2.default.createElement(_component2.default, { avatarImg: avatarImg, name: name, charge: charge })
+    _react2.default.createElement(_component2.default, { avatarImg: avatarImg, name: name, party: party })
   );
 };
 
@@ -68,7 +68,7 @@ CardContent.propTypes = {
   tagTitle: _propTypes2.default.string.isRequired,
   avatarImg: _propTypes2.default.string.isRequired,
   name: _propTypes2.default.string.isRequired,
-  charge: _propTypes2.default.string.isRequired
+  party: _propTypes2.default.string.isRequired
 };
 
 exports.default = CardContent;
