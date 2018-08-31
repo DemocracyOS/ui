@@ -19,7 +19,10 @@ const SocialBar = ({ children }) => (
 )
 
 SocialBar.propTypes = {
-  children: PropTypes.string
+  children: PropTypes.oneOfType([
+    PropTypes.arrayOf(PropTypes.node),
+    PropTypes.node
+  ]).isRequired
 }
 
 export default SocialBar
