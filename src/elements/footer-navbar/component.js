@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import PropTypes from 'prop-types'
 
-const Bar = styled.footer`
+const FooterBar = styled.footer`
   min-width:800px;  
   margin-left:auto;
   margin-right:auto;
@@ -24,18 +24,18 @@ const Bar = styled.footer`
   }
 `
 
-const Footer = ({ children }) => (
-  <Bar>
+const footerBar = ({ children }) => (
+  <FooterBar>
     { children }
-  </Bar>
+  </FooterBar>
 
 )
 
-Footer.propTypes = {
+footerBar.propTypes = {
   children: PropTypes.oneOfType([
     PropTypes.arrayOf(PropTypes.node),
     PropTypes.node
   ]).isRequired
 }
 
-export default Footer
+export default footerBar

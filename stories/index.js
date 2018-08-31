@@ -2,8 +2,7 @@ import React from 'react'
 import { Router } from 'react-router'
 import { Link } from 'react-router-dom'
 import createMemoryHistory from 'history/createMemoryHistory'
-import { storiesOf } from '@storybook/react'
-import { addDecorator } from '@storybook/react'
+import { storiesOf, addDecorator } from '@storybook/react'
 import { action } from '@storybook/addon-actions'
 import { withInfo } from '@storybook/addon-info'
 import { withNotes } from '@storybook/addon-notes'
@@ -22,16 +21,17 @@ import UserAvatar from '../src/elements/user-avatar/component'
 import CardContent from '../src/elements/card-content/component'
 import CardSocial from '../src/elements/card-social/component'
 import Card from '../src/components/card/component'
-import Bar from '../src/elements/footer-navbar/component'
+import FooterBar from '../src/elements/footer-navbar/component'
 import SocialIcon from '../src/elements/social-icon/component'
 import SocialBar from '../src/components/social-bar/component'
 import P from '../src/elements/footer-text/component'
 import FooterTextWrapper from '../src/elements/footer-text-wrapper/component'
+import Grid from '../src/layouts/grid/component'
 
 addDecorator((story, context) => withInfo('common info')(story)(context))
 addDecorator((story) => <Router history={history}>{story()}</Router>)
 addDecorator((story) => (
-  <div style={{ 'display': 'flex', 'justifyContent': 'center', 'marginTop': '20px', 'flexWrap': 'wrap' }}>
+  <div style={{ 'display': 'flex', 'justifyContent': 'center', 'marginTop': '50px', 'flexWrap': 'wrap' }}>
     {story()}
   </div>
 ))
@@ -150,21 +150,41 @@ storiesOf('elements/card-header', module)
   ))
 storiesOf('elements/user-avatar', module)
   .add('User avatar', () => (
-    <UserAvatar avatarImg={'https://i.ytimg.com/vi/US8BmC2ZeBE/hqdefault.jpg'} name={'Alvarez Rodriguez, María C'} charge={'Frente para la victoria - PJ'} />
+    <UserAvatar avatarImg={'https://i.ytimg.com/vi/US8BmC2ZeBE/hqdefault.jpg'} name={'Alvarez Rodriguez, María C'} party={'Frente para la victoria - PJ'} />
   ))
 storiesOf('elements/card-content', module)
   .add('Card content', () => (
-    <CardContent title={'Acceso a la educacion pública'} tagTitle={'libertad de expresión'} avatarImg={'https://i.ytimg.com/vi/US8BmC2ZeBE/hqdefault.jpg'} name={'Alvarez Rodriguez, María C'} charge={'Frente para la victoria - PJ'} />
+    <CardContent title={'Acceso a la educacion pública'} tagTitle={'libertad de expresión'} avatarImg={'https://i.ytimg.com/vi/US8BmC2ZeBE/hqdefault.jpg'} name={'Alvarez Rodriguez, María C'} party={'Frente para la victoria - PJ'} />
   ))
 
 storiesOf('elements/card-social', module)
   .add('Card content', () => (
-    <CardSocial commentaryItems={'33'} limitDate={'22/10/1990'} />
+    <CardSocial commentaries={33} limitDate={'22/10/1990'} />
   ))
+
+const project = {
+  img: 'https://i.ytimg.com/vi/US8BmC2ZeBE/hqdefault.jpg',
+  title: 'Acceso a la educacion pública',
+  tagTitle: 'libertad de expresión',
+  author: {
+    avatarImg: 'https://i.ytimg.com/vi/US8BmC2ZeBE/hqdefault.jpg',
+    name: 'Alvarez Rodriguez, María C',
+    party: 'Frente para la Victoria - PJ'
+  },
+  commentaries: 33,
+  limitDate: '22/10/1990'
+}
 
 storiesOf('components/card', module)
   .add('Card', () => (
-    <Card img={'https://i.ytimg.com/vi/US8BmC2ZeBE/hqdefault.jpg'} title={'Acceso a la educacion pública'} tagTitle={'libertad de expresión'} avatarImg={'https://i.ytimg.com/vi/US8BmC2ZeBE/hqdefault.jpg'} name={'Alvarez Rodriguez, María C'} charge={'Frente para la victoria - PJ'} commentaryItems={'33'} limitDate={'22/10/1990'} />
+    <Card project={project} />
+  ))
+
+const projects = Array(6).fill(project)
+
+storiesOf('layouts/grid', module)
+  .add('Grid', () => (
+    <Grid projects={projects} />
   ))
 
 storiesOf('elements/social-icon', module)
@@ -184,7 +204,7 @@ storiesOf('components/social-bar', module)
 storiesOf('layouts/footer', module)
   .add('Footer', () => (
     <Footer>
-      <Bar>
+      <FooterBar>
         <NavBarTitle footer>
           <Link to='/'><a>Co-Legis</a></Link>
         </NavBarTitle>
@@ -201,7 +221,7 @@ storiesOf('layouts/footer', module)
         <Link to='/'><a>Contacto</a></Link>
         <Link to='/'><a>Preguntas Frecuentes</a></Link>
         <Link to='/'><a>Términos y condiiones</a></Link>
-      </Bar>
+      </FooterBar>
 
       <FooterTextWrapper>
         <P>Honorable Cámara de diputados de la Nación Argentina | Congreso de la Nación Argentina | Av. Rivadavia 1864 | Ciudad Autónoma de Bs. As. (C.P. C1033AAV) | (54-11) 4127-7100</P>
