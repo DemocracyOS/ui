@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-// import PropTypes from 'prop-types'
+import PropTypes from 'prop-types'
 
 const StyledFooter = styled.footer`
   width: 100%;
@@ -9,8 +9,18 @@ const StyledFooter = styled.footer`
 
 `
 
-const Footer = () => (
-  <StyledFooter />
+const Footer = ({ children }) => (
+  <StyledFooter>
+    { children }
+  </StyledFooter>
+
 )
+
+Footer.propTypes = {
+  children: PropTypes.oneOfType([
+    PropTypes.arrayOf(PropTypes.node),
+    PropTypes.node
+  ]).isRequired
+}
 
 export default Footer

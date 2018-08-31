@@ -22,6 +22,9 @@ import UserAvatar from '../src/elements/user-avatar/component'
 import CardContent from '../src/elements/card-content/component'
 import CardSocial from '../src/elements/card-social/component'
 import Card from '../src/components/card/component'
+import Bar from '../src/elements/footer-navbar/component'
+import SocialIcon from '../src/elements/social-icon/component'
+import SocialBar from '../src/components/social-bar/component'
 
 addDecorator((story, context) => withInfo('common info')(story)(context))
 addDecorator((story) => <Router history={history}>{story()}</Router>)
@@ -139,10 +142,6 @@ storiesOf('layouts/hero', module)
     </Hero>
   ))
 
-storiesOf('layouts/footer', module)
-  .add('Footer', () => (
-    <Footer />
-  ))
 storiesOf('elements/card-header', module)
   .add('Card header', () => (
     <CardHeader img={'https://i.ytimg.com/vi/US8BmC2ZeBE/hqdefault.jpg'} />
@@ -164,4 +163,39 @@ storiesOf('elements/card-social', module)
 storiesOf('components/card', module)
   .add('Card', () => (
     <Card img={'https://i.ytimg.com/vi/US8BmC2ZeBE/hqdefault.jpg'} title={'Acceso a la educacion pública'} tagTitle={'libertad de expresión'} avatarImg={'https://i.ytimg.com/vi/US8BmC2ZeBE/hqdefault.jpg'} name={'Alvarez Rodriguez, María C'} charge={'Frente para la victoria - PJ'} commentaryItems={'33'} limitDate={'22/10/1990'} />
+  ))
+
+storiesOf('layouts/footer', module)
+  .add('Footer', () => (
+    <Footer>
+      <Bar>
+        <NavBarTitle footer>
+          <Link to='/'><a>Co-Legis</a></Link>
+        </NavBarTitle>
+        <SocialBar>
+          <SocialIcon img={'https://i.ytimg.com/vi/US8BmC2ZeBE/hqdefault.jpg'} />
+          <SocialIcon img={'https://i.ytimg.com/vi/US8BmC2ZeBE/hqdefault.jpg'} />
+          <SocialIcon img={'https://i.ytimg.com/vi/US8BmC2ZeBE/hqdefault.jpg'} />
+        </SocialBar>
+        <Link to='/'><a>Proyectos</a></Link>
+        <Link to='/'><a>Cómo participar</a></Link>
+        <Link to='/'><a>La Propuesta</a></Link>
+        <Link to='/'><a>Crear cuenta</a></Link>
+        <Link to='/'><a>Iniciar sesión</a></Link>
+        <Link to='/'><a>Contacto</a></Link>
+        <Link to='/'><a>Preguntas Frecuentes</a></Link>
+        <Link to='/'><a>Términos y condiiones</a></Link>
+
+      </Bar>
+    </Footer>
+  ))
+
+storiesOf('components/social-bar', module)
+  .add('Social bar', () => (
+    <SocialBar>
+      <SocialIcon img={'https://i.ytimg.com/vi/US8BmC2ZeBE/hqdefault.jpg'} />
+      <SocialIcon img={'https://i.ytimg.com/vi/US8BmC2ZeBE/hqdefault.jpg'} />
+      <SocialIcon img={'https://i.ytimg.com/vi/US8BmC2ZeBE/hqdefault.jpg'} />
+    </SocialBar>
+
   ))
