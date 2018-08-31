@@ -31,12 +31,12 @@ var Avatar = _styledComponents2.default.div(_templateObject2, function (props) {
   return props.avatarImg;
 });
 var Name = _styledComponents2.default.div(_templateObject3);
-var Charge = _styledComponents2.default.div(_templateObject4);
+var Party = _styledComponents2.default.div(_templateObject4);
 var TextWrapper = _styledComponents2.default.div(_templateObject5);
 var UserAvatar = function UserAvatar(_ref) {
   var avatarImg = _ref.avatarImg,
       name = _ref.name,
-      charge = _ref.charge;
+      party = _ref.party;
   return _react2.default.createElement(
     Wrapper,
     null,
@@ -51,9 +51,9 @@ var UserAvatar = function UserAvatar(_ref) {
         ' '
       ),
       _react2.default.createElement(
-        Charge,
+        Party,
         null,
-        charge
+        party
       )
     )
   );
@@ -62,7 +62,7 @@ var UserAvatar = function UserAvatar(_ref) {
 UserAvatar.propTypes = {
   name: _propTypes2.default.string.isRequired,
   avatarImg: _propTypes2.default.string.isRequired,
-  charge: _propTypes2.default.string.isRequired
+  party: _propTypes2.default.string.isRequired
 };
 
 exports.default = UserAvatar;

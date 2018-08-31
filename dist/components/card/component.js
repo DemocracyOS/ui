@@ -37,32 +37,34 @@ function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defi
 var CardContainer = _styledComponents2.default.div(_templateObject);
 
 var Card = function Card(_ref) {
-  var img = _ref.img,
-      commentaryItems = _ref.commentaryItems,
-      limitDate = _ref.limitDate,
-      tagTitle = _ref.tagTitle,
-      title = _ref.title,
-      avatarImg = _ref.avatarImg,
-      name = _ref.name,
-      charge = _ref.charge;
+  var project = _ref.project;
   return _react2.default.createElement(
     CardContainer,
     null,
-    _react2.default.createElement(_component2.default, { img: img }),
-    _react2.default.createElement(_component4.default, { tagTitle: tagTitle, title: title, avatarImg: avatarImg, name: name, charge: charge }),
-    _react2.default.createElement(_component6.default, { commentaryItems: commentaryItems, limitDate: limitDate })
+    project.img && _react2.default.createElement(_component2.default, { img: project.img }),
+    _react2.default.createElement(_component4.default, { tagTitle: project.tagTitle,
+      title: project.title,
+      avatarImg: project.author.avatarImg,
+      name: project.author.name,
+      party: project.author.party }),
+    _react2.default.createElement(_component6.default, { commentaries: project.commentaries,
+      limitDate: project.limitDate })
   );
 };
 
 Card.propTypes = {
-  img: _propTypes2.default.string,
-  commentaryItems: _propTypes2.default.string.isRequired,
-  limitDate: _propTypes2.default.string,
-  title: _propTypes2.default.string.isRequired,
-  tagTitle: _propTypes2.default.string.isRequired,
-  avatarImg: _propTypes2.default.string.isRequired,
-  name: _propTypes2.default.string.isRequired,
-  charge: _propTypes2.default.string.isRequired
-
+  project: _propTypes2.default.shape({
+    img: _propTypes2.default.string,
+    commentaries: _propTypes2.default.number.isRequired,
+    limitDate: _propTypes2.default.string,
+    title: _propTypes2.default.string.isRequired,
+    tagTitle: _propTypes2.default.string.isRequired,
+    author: _propTypes2.default.shape({
+      avatarImg: _propTypes2.default.string.isRequired,
+      name: _propTypes2.default.string.isRequired,
+      party: _propTypes2.default.string.isRequired
+    }).isRequired
+  }).isRequired
 };
+
 exports.default = Card;

@@ -28,17 +28,19 @@ font-size:1.2rem;
 const Span = styled.span`
   font-family: var(--bold);
 `
-const Social = ({ commentaryItems, limitDate }) => (
+const Social = ({ commentaries, limitDate }) => (
   <Wrapper>
     <CommentaryItems>
-      <Span> {commentaryItems}</Span> {commentaryItems === 1 ? ' Comentario' : ' Comentarios'}
+      <Span> {commentaries}</Span> {commentaries === 1 ? ' Comentario' : ' Comentarios'}
     </CommentaryItems>
-    <LimitDate><span>Aportes habilitados hasta: </span>{limitDate}</LimitDate>
+    {limitDate &&
+      <LimitDate><span>Aportes habilitados hasta: </span>{limitDate}</LimitDate>
+    }
   </Wrapper>
 )
 
 Social.propTypes = {
-  commentaryItems: PropTypes.string.isRequired,
+  commentaries: PropTypes.number.isRequired,
   limitDate: PropTypes.string
 }
 
