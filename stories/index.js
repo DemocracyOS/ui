@@ -21,6 +21,7 @@ import UserAvatar from '../src/elements/user-avatar/component'
 import CardContent from '../src/elements/card-content/component'
 import CardSocial from '../src/elements/card-social/component'
 import Card from '../src/components/card/component'
+import Grid from '../src/layouts/grid/component'
 
 addDecorator((story, context) => withInfo('common info')(story)(context))
 addDecorator((story) => <Router history={history}>{story()}</Router>)
@@ -176,4 +177,11 @@ const project = {
 storiesOf('components/card', module)
   .add('Card', () => (
     <Card project={project} />
+  ))
+
+const projects = Array(6).fill(project)
+
+storiesOf('layouts/grid', module)
+  .add('Grid', () => (
+    <Grid projects={projects} />
   ))
