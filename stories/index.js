@@ -165,6 +165,20 @@ storiesOf('components/card', module)
     <Card img={'https://i.ytimg.com/vi/US8BmC2ZeBE/hqdefault.jpg'} title={'Acceso a la educacion pública'} tagTitle={'libertad de expresión'} avatarImg={'https://i.ytimg.com/vi/US8BmC2ZeBE/hqdefault.jpg'} name={'Alvarez Rodriguez, María C'} charge={'Frente para la victoria - PJ'} commentaryItems={'33'} limitDate={'22/10/1990'} />
   ))
 
+storiesOf('elements/social-icon', module)
+  .add('Social icon', () => (
+    <SocialIcon img={'https://i.ytimg.com/vi/US8BmC2ZeBE/hqdefault.jpg'} />
+  ))
+
+storiesOf('components/social-bar', module)
+  .add('Social bar', () => (
+    <SocialBar>
+      <SocialIcon img={'https://i.ytimg.com/vi/US8BmC2ZeBE/hqdefault.jpg'} />
+      <SocialIcon img={'https://i.ytimg.com/vi/US8BmC2ZeBE/hqdefault.jpg'} />
+      <SocialIcon img={'https://i.ytimg.com/vi/US8BmC2ZeBE/hqdefault.jpg'} />
+    </SocialBar>
+
+  ))
 storiesOf('layouts/footer', module)
   .add('Footer', () => (
     <Footer>
@@ -188,14 +202,4 @@ storiesOf('layouts/footer', module)
 
       </Bar>
     </Footer>
-  ))
-
-storiesOf('components/social-bar', module)
-  .add('Social bar', () => (
-    <SocialBar>
-      <SocialIcon img={'https://i.ytimg.com/vi/US8BmC2ZeBE/hqdefault.jpg'} />
-      <SocialIcon img={'https://i.ytimg.com/vi/US8BmC2ZeBE/hqdefault.jpg'} />
-      <SocialIcon img={'https://i.ytimg.com/vi/US8BmC2ZeBE/hqdefault.jpg'} />
-    </SocialBar>
-
   ))
