@@ -33,14 +33,14 @@ const TextWrapper = styled.div`
 
 `
 
-const CardContent = ({ tagTitle, title, avatarImg, name, charge }) => (
+const CardContent = ({ tagTitle, title, avatarImg, name, party }) => (
   <Wrapper>
     <TextWrapper>
       <TagTitle>{tagTitle}</TagTitle>
       <Title>{title} </Title>
     </TextWrapper>
 
-    <UserAvatar avatarImg={avatarImg} name={name} charge={charge} />
+    <UserAvatar avatarImg={avatarImg} name={name} party={party} />
   </Wrapper>
 )
 
@@ -49,7 +49,7 @@ CardContent.propTypes = {
   tagTitle: PropTypes.string.isRequired,
   avatarImg: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
-  charge: PropTypes.string.isRequired
+  party: PropTypes.string.isRequired
 }
 
 export default CardContent
