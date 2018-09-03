@@ -10,15 +10,16 @@ const StyledSection = styled.section`
     flex-wrap: wrap;
     flex-direction: column;
     align-items: flex-start;
-    background-color: #f2f5f8;;
-    &:nth-child(even) {
-    background-color: var(--white);
-    background-size: 60px 60px;
-    background-image: linear-gradient(to right, #f2f5f8 1px, transparent 1px)
-    > h2 {
-      color: #2c4c61;
+    &:nth-child(odd) {
+      background-color: #f2f5f8;
     }
-  }
+    &:nth-child(even) {
+      background-size: 60px 60px;
+      background-image: linear-gradient(to right, #f2f5f8 1px, transparent 1px);
+      > h2 {
+        color: #2c4c61;
+      }
+    }
 `
 
 const Section = ({ children }) => (
