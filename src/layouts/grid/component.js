@@ -8,6 +8,7 @@ const StyledGrid = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin: 4.8rem 0 1.6rem;
   > div {
     margin-bottom: 56px;
   }

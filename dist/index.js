@@ -37,7 +37,11 @@ var _component13 = require('./elements/card-social/component');
 
 var _component14 = _interopRequireDefault(_component13);
 
+<<<<<<< HEAD
+var _component15 = require('./elements/button/component');
+=======
 var _component15 = require('./elements/navbar-title/component');
+>>>>>>> origin
 
 var _component16 = _interopRequireDefault(_component15);
 
@@ -104,29 +108,28 @@ var _component46 = _interopRequireDefault(_component45);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 // Export all components
-exports.NavBarTitle = _component16.default;
-exports.UserBar = _component32.default;
-exports.HeroTitle = _component18.default;
-exports.HeroSubtitle = _component20.default;
-exports.HeroButton = _component22.default;
-exports.HeroImg = _component24.default;
-exports.SubtitleH3 = _component26.default;
-exports.TitleH2 = _component28.default;
-exports.LinkBar = _component30.default;
-exports.Section = _component38.default;
-exports.Navbar = _component40.default;
-exports.HeroLeftColumn = _component34.default;
-exports.Hero = _component42.default;
-exports.Footer = _component44.default;
-exports.CardHeader = _component8.default;
-exports.UserAvatar = _component10.default;
-exports.CardContent = _component12.default;
-exports.CardSocial = _component14.default;
-exports.Card = _component36.default;
-exports.FooterBar = _component2.default;
-exports.P = _component4.default;
-exports.FooterTextWrapper = _component6.default;
-exports.Grid = _component46.default;
+
+// Import elements
+exports.NavBarTitle = _component10.default;
+exports.UserBar = _component26.default;
+exports.HeroTitle = _component12.default;
+exports.HeroSubtitle = _component14.default;
+exports.Button = _component16.default;
+exports.HeroImg = _component18.default;
+exports.SubtitleH3 = _component20.default;
+exports.TitleH2 = _component22.default;
+exports.LinkBar = _component24.default;
+exports.Section = _component32.default;
+exports.Navbar = _component34.default;
+exports.HeroLeftColumn = _component28.default;
+exports.Hero = _component36.default;
+exports.Footer = _component38.default;
+exports.CardHeader = _component2.default;
+exports.UserAvatar = _component4.default;
+exports.CardContent = _component6.default;
+exports.CardSocial = _component8.default;
+exports.Card = _component30.default;
+exports.Grid = _component40.default;
 
 // Import layouts
 

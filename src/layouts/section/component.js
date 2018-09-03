@@ -3,19 +3,23 @@ import styled from 'styled-components'
 import PropTypes from 'prop-types'
 
 const StyledSection = styled.section`
-    margin-left: 5.5rem;
-    padding: 7rem 3.5rem;
+    width: 100%;
+    margin-left: 5rem;
+    padding: 8.4rem 4.3rem;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     align-items: flex-start;
-    background-color: var(--white);
-    &:nth-child(even) {
-    background-color: #5c97bc;
-    > h2 {
-      color: var(--white);
+    &:nth-child(odd) {
+      background-color: #f2f5f8;
     }
-  }
+    &:nth-child(even) {
+      background-size: 60px 60px;
+      background-image: linear-gradient(to right, #f2f5f8 1px, transparent 1px);
+      > h2 {
+        color: #2c4c61;
+      }
+    }
 `
 
 const Section = ({ children }) => (

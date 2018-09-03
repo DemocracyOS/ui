@@ -10,7 +10,7 @@ const Wrapper = styled.div`
   list-style:none;
   padding-left:0;
   > a {
-    color: #192a34;
+    color: #203340;
     display: inline-block;
     padding: 10px 20px;
     font-size: 1.6rem;

@@ -5,7 +5,7 @@ import styled from 'styled-components'
 const StyledHeroSubtitle = styled.h2`
   font-size: 1.8rem;
   line-height: 1.67;
-  color: #2d4b5e;
+  color: #5c97bc;
   max-width: 516px;
 `
 

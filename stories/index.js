@@ -10,7 +10,7 @@ import '../src/index.css'
 import NavBarTitle from '../src/elements/navbar-title/component'
 import UserBar from '../src/components/user-bar/component'
 import Linkbar from '../src/components/linkbar/component'
-import { HeroTitle, HeroSubtitle, HeroButton, HeroImg, HeroLeftColumn, Hero } from '../src/index.js'
+import { HeroTitle, HeroSubtitle, Button, HeroImg, HeroLeftColumn, Hero } from '../src/index.js'
 import TitleH2 from '../src/elements/title-h2/component'
 import SubtitleH3 from '../src/elements/subtitle-h3/component'
 import Section from '../src/layouts/section/component'
@@ -21,12 +21,13 @@ import UserAvatar from '../src/elements/user-avatar/component'
 import CardContent from '../src/elements/card-content/component'
 import CardSocial from '../src/elements/card-social/component'
 import Card from '../src/components/card/component'
-import FooterBar from '../src/elements/footer-navbar/component'
+import FooterBar from '../src/elements/footer-bar/component'
 import SocialIcon from '../src/elements/social-icon/component'
 import SocialBar from '../src/components/social-bar/component'
 import P from '../src/elements/footer-text/component'
 import FooterTextWrapper from '../src/elements/footer-text-wrapper/component'
 import Grid from '../src/layouts/grid/component'
+import FooterLogo from '../src/elements/footer-logo/component'
 
 addDecorator((story, context) => withInfo('common info')(story)(context))
 addDecorator((story) => <Router history={history}>{story()}</Router>)
@@ -54,18 +55,17 @@ storiesOf('elements/NavBarTitle', module)
 storiesOf('components/UserBar', module)
   .add('UserBar', () => (
     <UserBar>
-      <Link to='/'>Create account</Link>
-      <Link to='/'>Log in</Link>
+      <Button>Create account</Button>
+      <Button primary>Login</Button>
     </UserBar>
   ))
 
 storiesOf('components/linkbar', module)
   .add('Linkbar', () => (
     <Linkbar>
-      <Link to='/'>Inicio</Link>
-      <Link to='/'>Proyectos</Link>
-      <Link to='/'>Cómo participar</Link>
-      <Link to='/'>La propuesta</Link>
+      <Link to='/'>Link 1</Link>
+      <Link to='/'>Link 2</Link>
+      <Link to='/'>Link 3</Link>
     </Linkbar>
   ))
 storiesOf('elements/HeroTitle', module)
@@ -79,9 +79,9 @@ storiesOf('elements/HeroSubtitle', module)
     </HeroSubtitle>
   ))
 
-storiesOf('elements/HeroButton', module)
-  .add('Hero Button', () => (
-    <HeroButton viewmore onClick={action('clicked')}>Hero button</HeroButton>
+storiesOf('elements/Button', module)
+  .add('Button', () => (
+    <Button onClick={action('clicked')}>Button</Button>
   ))
 
 storiesOf('elements/HeroImg', module)
@@ -91,12 +91,12 @@ storiesOf('elements/HeroImg', module)
 
 storiesOf('elements/Title-h2', module)
   .add('H2 - Title', () => (
-    <TitleH2>Proyectos en debate</TitleH2>
+    <TitleH2>Title H2</TitleH2>
   ))
 
 storiesOf('elements/subtitle-h3', module)
   .add('H3 - Subtitle', () => (
-    <SubtitleH3>Estos son los proyectos</SubtitleH3>
+    <SubtitleH3>Subitle H3</SubtitleH3>
   ))
 
 storiesOf('layouts/section', module)
@@ -117,17 +117,17 @@ storiesOf('layouts/navbar', module)
   .add('Navbar', () => (
     <Navbar>
       <NavBarTitle>
-        <Link to='/'><a>Co-Legis</a></Link>
+        <Link to='/'><a>co<span>legis</span></a></Link>
       </NavBarTitle>
       <Linkbar>
-        <Link to='/'><a>Inicio</a></Link>
         <Link to='/'><a>Proyectos</a></Link>
         <Link to='/'><a>Cómo participar</a></Link>
         <Link to='/'><a>La Propuesta</a></Link>
       </Linkbar>
       <UserBar>
-        <Link to='/'><a>Crear cuenta</a></Link>
-        <Link to='/'><a>Ingresar</a></Link>
+        <Button>Iniciar sesión</Button>
+        <Button primary>Registrarse</Button>
+
       </UserBar>
     </Navbar>
   ))
@@ -136,9 +136,8 @@ storiesOf('layouts/hero', module)
   .add('Hero', () => (
     <Hero>
       <HeroLeftColumn>
-        <HeroTitle>Ciudadanos y Representantes juntos para crear mejores leyes.</HeroTitle>
-        <HeroSubtitle>Sus sugerencias son importantes y serán tenidas en cuenta  por los especialistas y parlamentaristas.</HeroSubtitle>
-        <HeroButton>Como participo</HeroButton>
+        <HeroTitle>La ciudadanía y sus representantes conectados para co-crear mejores leyes</HeroTitle>
+        <HeroSubtitle>¡Participá haciendo comentarios y sugerencias en los propuestas de ley! Los/as diputados/as tendrán en cuenta tus aportes</HeroSubtitle>
       </HeroLeftColumn>
       <HeroImg />
     </Hero>
@@ -206,27 +205,23 @@ storiesOf('layouts/footer', module)
     <Footer>
       <FooterBar>
         <NavBarTitle footer>
-          <Link to='/'><a>Co-Legis</a></Link>
+          <Link to='/'><FooterLogo img={'https://i.ytimg.com/vi/US8BmC2ZeBE/hqdefault.jpg'} /></Link>
         </NavBarTitle>
         <SocialBar>
-          <SocialIcon img={'https://i.ytimg.com/vi/US8BmC2ZeBE/hqdefault.jpg'} />
-          <SocialIcon img={'https://i.ytimg.com/vi/US8BmC2ZeBE/hqdefault.jpg'} />
-          <SocialIcon img={'https://i.ytimg.com/vi/US8BmC2ZeBE/hqdefault.jpg'} />
+          <SocialIcon
+            img={'https://i.ytimg.com/vi/US8BmC2ZeBE/hqdefault.jpg'} 
+            link={'/'} />
+          <SocialIcon img={'https://i.ytimg.com/vi/US8BmC2ZeBE/hqdefault.jpg'}
+            link={'/'} />
         </SocialBar>
         <Link to='/'><a>Proyectos</a></Link>
-        <Link to='/'><a>Cómo participar</a></Link>
         <Link to='/'><a>La Propuesta</a></Link>
-        <Link to='/'><a>Crear cuenta</a></Link>
-        <Link to='/'><a>Iniciar sesión</a></Link>
-        <Link to='/'><a>Contacto</a></Link>
         <Link to='/'><a>Preguntas Frecuentes</a></Link>
-        <Link to='/'><a>Términos y condiiones</a></Link>
+        <Link to='/'><a>Términos y condiciones</a></Link>
       </FooterBar>
-
       <FooterTextWrapper>
         <P>Honorable Cámara de diputados de la Nación Argentina | Congreso de la Nación Argentina | Av. Rivadavia 1864 | Ciudad Autónoma de Bs. As. (C.P. C1033AAV) | (54-11) 4127-7100</P>
         <P>La información contenida en este sitio es de dominio público y puede ser utilizada libremente. Se solicita citar la fuente.</P>
       </FooterTextWrapper>
-
     </Footer>
   ))
