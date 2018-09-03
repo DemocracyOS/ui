@@ -4,18 +4,10 @@ import styled from 'styled-components'
 // import UserLink from '../../elements/user-link/component'
 
 const Bar = styled.div`
-  > a {
-    font-family: var(--bold);
-    font-size: 1.6rem;
-    color: #4f81a1;
-    &:first-child {
-      margin-right: 21px;
-    }
-    &:first-child:after {
-      content: '·';
-      margin-left: 21px;
-    }
-  }
+display:flex;
+justify-content:space-between;
+min-width: 270px;
+
 `
 
 const UserBar = ({ children }) => (

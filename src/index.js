@@ -11,7 +11,7 @@ import CardSocial from './elements/card-social/component'
 import NavBarTitle from './elements/navbar-title/component'
 import HeroTitle from './elements/hero-title/component'
 import HeroSubtitle from './elements/hero-subtitle/component'
-import HeroButton from './elements/hero-button/component'
+import Button from './elements/button/component'
 import HeroImg from './elements/hero-img/component'
 import SubtitleH3 from './elements/subtitle-h3/component'
 import TitleH2 from './elements/title-h2/component'
@@ -35,7 +35,7 @@ export {
   UserBar,
   HeroTitle,
   HeroSubtitle,
-  HeroButton,
+  Button,
   HeroImg,
   SubtitleH3,
   TitleH2,
