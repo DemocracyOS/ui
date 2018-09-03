@@ -63,10 +63,9 @@ storiesOf('components/UserBar', module)
 storiesOf('components/linkbar', module)
   .add('Linkbar', () => (
     <Linkbar>
-      <Link to='/'>Inicio</Link>
-      <Link to='/'>Proyectos</Link>
-      <Link to='/'>Cómo participar</Link>
-      <Link to='/'>La propuesta</Link>
+      <Link to='/'>Link 1</Link>
+      <Link to='/'>Link 2</Link>
+      <Link to='/'>Link 3</Link>
     </Linkbar>
   ))
 storiesOf('elements/HeroTitle', module)
@@ -92,12 +91,12 @@ storiesOf('elements/HeroImg', module)
 
 storiesOf('elements/Title-h2', module)
   .add('H2 - Title', () => (
-    <TitleH2>Proyectos en debate</TitleH2>
+    <TitleH2>Title H2</TitleH2>
   ))
 
 storiesOf('elements/subtitle-h3', module)
   .add('H3 - Subtitle', () => (
-    <SubtitleH3>Estos son los proyectos</SubtitleH3>
+    <SubtitleH3>Subitle H3</SubtitleH3>
   ))
 
 storiesOf('layouts/section', module)
