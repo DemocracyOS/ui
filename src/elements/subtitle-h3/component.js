@@ -3,9 +3,10 @@ import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
 const Title = styled.h3`
-  font-size: 1.6rem;
-  color: var(--secondary-color);
+  font-size: 1.4rem;
+  color: #101a21;
   padding:0 10 10 0;
+  line-height: 3.5;
 `
 
 const SubtitleH3 = (props) => (
