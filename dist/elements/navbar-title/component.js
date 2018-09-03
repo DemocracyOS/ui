@@ -4,7 +4,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _templateObject = _taggedTemplateLiteral(['\n  > a {\n    font-family: var(--bold);\n    font-size: 3rem;\n    color: #192a34;\n    text-decoration: none;\n  }\n'], ['\n  > a {\n    font-family: var(--bold);\n    font-size: 3rem;\n    color: #192a34;\n    text-decoration: none;\n  }\n']);
+var _templateObject = _taggedTemplateLiteral(['\n > a {\n   font-family: var(--bold);\n   font-size: 3rem;\n   color: ', ';\n   text-decoration: none;\n }\n'], ['\n > a {\n   font-family: var(--bold);\n   font-size: 3rem;\n   color: ', ';\n   text-decoration: none;\n }\n']);
 
 var _react = require('react');
 
@@ -22,19 +22,12 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
 
-var Title = _styledComponents2.default.span(_templateObject);
-
-var NavBarTitle = function NavBarTitle(_ref) {
-  var children = _ref.children;
-  return _react2.default.createElement(
-    Title,
-    null,
-    children
-  );
-};
+var NavBarTitle = _styledComponents2.default.span(_templateObject, function (props) {
+  return props.footer ? '#4f81a1' : '#2d4b5e';
+});
 
 NavBarTitle.propTypes = {
-  children: _propTypes2.default.node.isRequired
+  footer: _propTypes2.default.bool
 };
 
 exports.default = NavBarTitle;

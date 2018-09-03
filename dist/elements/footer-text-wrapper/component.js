@@ -4,7 +4,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _templateObject = _taggedTemplateLiteral(['\n  width: 100%;\n  height: 33.6rem;\n  background-color: var(--white);\n  display:flex;\n  flex-direction:column;\n  justify-content:space-between;\n\n'], ['\n  width: 100%;\n  height: 33.6rem;\n  background-color: var(--white);\n  display:flex;\n  flex-direction:column;\n  justify-content:space-between;\n\n']);
+var _templateObject = _taggedTemplateLiteral(['\n  text-align: center;\n  height: 80px;\n'], ['\n  text-align: center;\n  height: 80px;\n']);
 
 var _react = require('react');
 
@@ -22,19 +22,18 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
 
-var StyledFooter = _styledComponents2.default.footer(_templateObject);
-
-var Footer = function Footer(_ref) {
+var StyledText = _styledComponents2.default.div(_templateObject);
+var FooterText = function FooterText(_ref) {
   var children = _ref.children;
   return _react2.default.createElement(
-    StyledFooter,
+    StyledText,
     null,
     children
   );
 };
 
-Footer.propTypes = {
+FooterText.propTypes = {
   children: _propTypes2.default.oneOfType([_propTypes2.default.arrayOf(_propTypes2.default.node), _propTypes2.default.node]).isRequired
 };
 
-exports.default = Footer;
+exports.default = FooterText;
