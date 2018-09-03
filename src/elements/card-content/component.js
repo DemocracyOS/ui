@@ -18,7 +18,7 @@ const TagTitle = styled.div`
 font-size:1.2rem;
 text-transform:uppercase;
 text-align:left;
-color:var(--primary-color);
+color:#5c97bc;
 padding-bottom:1rem;
 `
 

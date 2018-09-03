@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
+import img from './asset.svg'
 
 const Wrapper = styled.div`
 height:85px;
@@ -20,6 +21,16 @@ box-sizing:border-box;
 const CommentaryItems = styled.div`
 padding-bottom:1.3rem;
 text-transform:uppercase;
+display: flex;
+align-items: center;
+`
+
+const CommentaryIcon = styled.div`
+  width: 18px;
+  height: 17px;
+  background-image: url(${img});
+  background-size: cover;
+  background-repeat: no-repeat;
 `
 
 const LimitDate = styled.div`
@@ -27,10 +38,12 @@ font-size:1.2rem;
 `
 const Span = styled.span`
   font-family: var(--bold);
+  margin: 0 0.5rem 0 1rem;
 `
 const Social = ({ commentaries, limitDate }) => (
   <Wrapper>
     <CommentaryItems>
+      <CommentaryIcon />
       <Span> {commentaries}</Span> {commentaries === 1 ? ' Comentario' : ' Comentarios'}
     </CommentaryItems>
     {limitDate &&
