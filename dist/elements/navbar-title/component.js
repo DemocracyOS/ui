@@ -4,15 +4,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _templateObject = _taggedTemplateLiteral(['\n > a {\n   font-family: var(--bold);\n   font-size: 3rem;\n   color: ', ';\n   text-decoration: none;\n }\n'], ['\n > a {\n   font-family: var(--bold);\n   font-size: 3rem;\n   color: ', ';\n   text-decoration: none;\n }\n']);
-
-var _react = require('react');
-
-var _react2 = _interopRequireDefault(_react);
-
-var _propTypes = require('prop-types');
-
-var _propTypes2 = _interopRequireDefault(_propTypes);
+var _templateObject = _taggedTemplateLiteral(['\n > a {\n   font-size: 3rem;\n   color: #203340;\n   text-decoration: none; \n }\n &&& span {\n   font-family: var(--bold);\n }\n'], ['\n > a {\n   font-size: 3rem;\n   color: #203340;\n   text-decoration: none; \n }\n &&& span {\n   font-family: var(--bold);\n }\n']);
 
 var _styledComponents = require('styled-components');
 
@@ -22,12 +14,6 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
 
-var NavBarTitle = _styledComponents2.default.span(_templateObject, function (props) {
-  return props.footer ? '#4f81a1' : '#2d4b5e';
-});
-
-NavBarTitle.propTypes = {
-  footer: _propTypes2.default.bool
-};
+var NavBarTitle = _styledComponents2.default.div(_templateObject);
 
 exports.default = NavBarTitle;

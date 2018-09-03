@@ -4,7 +4,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _templateObject = _taggedTemplateLiteral(['\n color: #8b9fab;\n font-size:1.2rem;\n font-family:var(--light);\n padding:5px;\n margin:0;\n'], ['\n color: #8b9fab;\n font-size:1.2rem;\n font-family:var(--light);\n padding:5px;\n margin:0;\n']);
+var _templateObject = _taggedTemplateLiteral(['\n color: #8b9fab;\n font-size:1.2rem;\n font-family:var(--normal);\n margin: 0;\n'], ['\n color: #8b9fab;\n font-size:1.2rem;\n font-family:var(--normal);\n margin: 0;\n']);
 
 var _styledComponents = require('styled-components');
 

@@ -4,7 +4,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _templateObject = _taggedTemplateLiteral(['\n  width:130px;\n  height:50px;\n  margin-right:70px;\n  display:flex;\n  justify-content:space-between;\n  align-items:center;\n  '], ['\n  width:130px;\n  height:50px;\n  margin-right:70px;\n  display:flex;\n  justify-content:space-between;\n  align-items:center;\n  ']);
+var _templateObject = _taggedTemplateLiteral(['\n  width:130px;\n  height:50px;\n  margin-right:70px;\n  display:flex;\n  justify-content: flex-start;\n  align-items:center;\n'], ['\n  width:130px;\n  height:50px;\n  margin-right:70px;\n  display:flex;\n  justify-content: flex-start;\n  align-items:center;\n']);
 
 var _react = require('react');
 
@@ -22,16 +22,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
 
-var Wrapper = _styledComponents2.default.div(_templateObject);
-
-var SocialBar = function SocialBar(_ref) {
-  var children = _ref.children;
-  return _react2.default.createElement(
-    Wrapper,
-    null,
-    children
-  );
-};
+var SocialBar = _styledComponents2.default.div(_templateObject);
 
 SocialBar.propTypes = {
   children: _propTypes2.default.oneOfType([_propTypes2.default.arrayOf(_propTypes2.default.node), _propTypes2.default.node]).isRequired

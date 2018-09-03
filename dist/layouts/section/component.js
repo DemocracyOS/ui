@@ -4,7 +4,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _templateObject = _taggedTemplateLiteral(['\n    margin-left: 5.5rem;\n    padding: 7rem 3.5rem;\n    display: flex;\n    flex-wrap: wrap;\n    flex-direction: column;\n    align-items: flex-start;\n    background-color: var(--white);\n    &:nth-child(even) {\n    background-color: #5c97bc;\n    > h2 {\n      color: var(--white);\n    }\n  }\n'], ['\n    margin-left: 5.5rem;\n    padding: 7rem 3.5rem;\n    display: flex;\n    flex-wrap: wrap;\n    flex-direction: column;\n    align-items: flex-start;\n    background-color: var(--white);\n    &:nth-child(even) {\n    background-color: #5c97bc;\n    > h2 {\n      color: var(--white);\n    }\n  }\n']);
+var _templateObject = _taggedTemplateLiteral(['\n    width: 100%;\n    margin-left: 5rem;\n    padding: 8.4rem 4.3rem;\n    display: flex;\n    flex-wrap: wrap;\n    flex-direction: column;\n    align-items: flex-start;\n    &:nth-child(odd) {\n      background-color: #f2f5f8;\n    }\n    &:nth-child(even) {\n      background-size: 60px 60px;\n      background-image: linear-gradient(to right, #f2f5f8 1px, transparent 1px);\n      > h2 {\n        color: #2c4c61;\n      }\n    }\n'], ['\n    width: 100%;\n    margin-left: 5rem;\n    padding: 8.4rem 4.3rem;\n    display: flex;\n    flex-wrap: wrap;\n    flex-direction: column;\n    align-items: flex-start;\n    &:nth-child(odd) {\n      background-color: #f2f5f8;\n    }\n    &:nth-child(even) {\n      background-size: 60px 60px;\n      background-image: linear-gradient(to right, #f2f5f8 1px, transparent 1px);\n      > h2 {\n        color: #2c4c61;\n      }\n    }\n']);
 
 var _react = require('react');
 

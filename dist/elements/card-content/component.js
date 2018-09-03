@@ -5,7 +5,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 
 var _templateObject = _taggedTemplateLiteral(['\nwidth:320px;\nmargin-top:-70px;\nbackground-color:#fff;\ndisplay:flex;\nflex-direction:column;\njustify-content:space-between;\nheight:177px;\npadding:12px;\nbox-sizing: border-box;\n'], ['\nwidth:320px;\nmargin-top:-70px;\nbackground-color:#fff;\ndisplay:flex;\nflex-direction:column;\njustify-content:space-between;\nheight:177px;\npadding:12px;\nbox-sizing: border-box;\n']),
-    _templateObject2 = _taggedTemplateLiteral(['\nfont-size:1.2rem;\ntext-transform:uppercase;\ntext-align:left;\ncolor:var(--primary-color);\npadding-bottom:1rem;\n'], ['\nfont-size:1.2rem;\ntext-transform:uppercase;\ntext-align:left;\ncolor:var(--primary-color);\npadding-bottom:1rem;\n']),
+    _templateObject2 = _taggedTemplateLiteral(['\nfont-size:1.2rem;\ntext-transform:uppercase;\ntext-align:left;\ncolor:#5c97bc;\npadding-bottom:1rem;\n'], ['\nfont-size:1.2rem;\ntext-transform:uppercase;\ntext-align:left;\ncolor:#5c97bc;\npadding-bottom:1rem;\n']),
     _templateObject3 = _taggedTemplateLiteral(['\nfont-size:2.4rem;\ncolor:#000;\ntext-align:left;\nfont-family: var(--bold);\npadding-bottom:2rem;\n'], ['\nfont-size:2.4rem;\ncolor:#000;\ntext-align:left;\nfont-family: var(--bold);\npadding-bottom:2rem;\n']),
     _templateObject4 = _taggedTemplateLiteral(['\n\n'], ['\n\n']);
 

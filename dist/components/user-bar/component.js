@@ -4,7 +4,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _templateObject = _taggedTemplateLiteral(['\n  > a {\n    font-family: var(--bold);\n    font-size: 1.6rem;\n    color: #4f81a1;\n    &:first-child {\n      margin-right: 21px;\n    }\n    &:first-child:after {\n      content: \'\xB7\';\n      margin-left: 21px;\n    }\n  }\n'], ['\n  > a {\n    font-family: var(--bold);\n    font-size: 1.6rem;\n    color: #4f81a1;\n    &:first-child {\n      margin-right: 21px;\n    }\n    &:first-child:after {\n      content: \'\xB7\';\n      margin-left: 21px;\n    }\n  }\n']);
+var _templateObject = _taggedTemplateLiteral(['\ndisplay:flex;\njustify-content:space-between;\nmin-width: 270px;\n\n'], ['\ndisplay:flex;\njustify-content:space-between;\nmin-width: 270px;\n\n']);
 
 var _react = require('react');
 

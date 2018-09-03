@@ -4,7 +4,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _templateObject = _taggedTemplateLiteral(['\n  width: 100%;\n  height: 48.5rem;\n  background-color: var(--white);\n  display:flex;\n  flex-direction:column;\n  justify-content: flex-end;\n'], ['\n  width: 100%;\n  height: 48.5rem;\n  background-color: var(--white);\n  display:flex;\n  flex-direction:column;\n  justify-content: flex-end;\n']);
+var _templateObject = _taggedTemplateLiteral(['\n  width: 102px;\n  height: 36px;\n  background-image: url(\'', '\');\n  background-size: cover;\n  background-position: center;\n'], ['\n  width: 102px;\n  height: 36px;\n  background-image: url(\'', '\');\n  background-size: cover;\n  background-position: center;\n']);
 
 var _react = require('react');
 
@@ -22,10 +22,12 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
 
-var Footer = _styledComponents2.default.footer(_templateObject);
+var FooterLogo = _styledComponents2.default.div(_templateObject, function (props) {
+  return props.img;
+});
 
-Footer.propTypes = {
-  children: _propTypes2.default.oneOfType([_propTypes2.default.arrayOf(_propTypes2.default.node), _propTypes2.default.node]).isRequired
+FooterLogo.propTypes = {
+  img: _propTypes2.default.string.isRequired
 };
 
-exports.default = Footer;
+exports.default = FooterLogo;
