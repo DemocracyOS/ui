@@ -136,9 +136,8 @@ storiesOf('layouts/hero', module)
   .add('Hero', () => (
     <Hero>
       <HeroLeftColumn>
-        <HeroTitle>Ciudadanos y Representantes juntos para crear mejores leyes.</HeroTitle>
-        <HeroSubtitle>Sus sugerencias son importantes y serán tenidas en cuenta  por los especialistas y parlamentaristas.</HeroSubtitle>
-        <HeroButton>Como participo</HeroButton>
+        <HeroTitle>La ciudadanía y sus representantes conectados para co-crear mejores leyes</HeroTitle>
+        <HeroSubtitle>¡Participá haciendo comentarios y sugerencias en los propuestas de ley! Los/as diputados/as tendrán en cuenta tus aportes</HeroSubtitle>
       </HeroLeftColumn>
       <HeroImg />
     </Hero>
