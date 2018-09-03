@@ -4,9 +4,6 @@ import PropTypes from 'prop-types'
 
 const StyledLeftColumn = styled.div`
   max-width: 62.9rem;
-  > button {
-    margin: 37px 0;
-  }
 `
 
 const HeroLeftColumn  = ({ children }) => (
