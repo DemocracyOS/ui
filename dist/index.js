@@ -3,7 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.Grid = exports.Card = exports.CardSocial = exports.CardContent = exports.UserAvatar = exports.CardHeader = exports.Footer = exports.Hero = exports.HeroLeftColumn = exports.Navbar = exports.Section = exports.LinkBar = exports.TitleH2 = exports.SubtitleH3 = exports.HeroImg = exports.HeroButton = exports.HeroSubtitle = exports.HeroTitle = exports.UserBar = exports.NavBarTitle = undefined;
+exports.Grid = exports.Card = exports.CardSocial = exports.CardContent = exports.UserAvatar = exports.CardHeader = exports.Footer = exports.Hero = exports.HeroLeftColumn = exports.Navbar = exports.Section = exports.LinkBar = exports.TitleH2 = exports.SubtitleH3 = exports.HeroImg = exports.Button = exports.HeroSubtitle = exports.HeroTitle = exports.UserBar = exports.NavBarTitle = undefined;
 
 var _react = require('react');
 
@@ -37,7 +37,7 @@ var _component13 = require('./elements/hero-subtitle/component');
 
 var _component14 = _interopRequireDefault(_component13);
 
-var _component15 = require('./elements/hero-button/component');
+var _component15 = require('./elements/button/component');
 
 var _component16 = _interopRequireDefault(_component15);
 
@@ -98,7 +98,7 @@ exports.NavBarTitle = _component10.default;
 exports.UserBar = _component26.default;
 exports.HeroTitle = _component12.default;
 exports.HeroSubtitle = _component14.default;
-exports.HeroButton = _component16.default;
+exports.Button = _component16.default;
 exports.HeroImg = _component18.default;
 exports.SubtitleH3 = _component20.default;
 exports.TitleH2 = _component22.default;

@@ -10,7 +10,7 @@ import '../src/index.css'
 import NavBarTitle from '../src/elements/navbar-title/component'
 import UserBar from '../src/components/user-bar/component'
 import Linkbar from '../src/components/linkbar/component'
-import { HeroTitle, HeroSubtitle, HeroButton, HeroImg, HeroLeftColumn, Hero } from '../src/index.js'
+import { HeroTitle, HeroSubtitle, Button, HeroImg, HeroLeftColumn, Hero } from '../src/index.js'
 import TitleH2 from '../src/elements/title-h2/component'
 import SubtitleH3 from '../src/elements/subtitle-h3/component'
 import Section from '../src/layouts/section/component'
@@ -55,8 +55,8 @@ storiesOf('elements/NavBarTitle', module)
 storiesOf('components/UserBar', module)
   .add('UserBar', () => (
     <UserBar>
-      <HeroButton>Create account</HeroButton>
-      <HeroButton primary>Login</HeroButton>
+      <Button>Create account</Button>
+      <Button primary>Login</Button>
     </UserBar>
   ))
 
@@ -79,9 +79,9 @@ storiesOf('elements/HeroSubtitle', module)
     </HeroSubtitle>
   ))
 
-storiesOf('elements/HeroButton', module)
-  .add('Hero Button', () => (
-    <HeroButton primary onClick={action('clicked')}>Hero button</HeroButton>
+storiesOf('elements/Button', module)
+  .add('Button', () => (
+    <Button bordernone onClick={action('clicked')}>Button</Button>
   ))
 
 storiesOf('elements/HeroImg', module)
@@ -125,8 +125,8 @@ storiesOf('layouts/navbar', module)
         <Link to='/'><a>La Propuesta</a></Link>
       </Linkbar>
       <UserBar>
-        <HeroButton>Iniciar sesión</HeroButton>
-        <HeroButton primary>Registrarse</HeroButton>
+        <Button>Iniciar sesión</Button>
+        <Button primary>Registrarse</Button>
 
       </UserBar>
     </Navbar>
