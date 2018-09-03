@@ -13,8 +13,7 @@ const StyledButton = styled.button`
 /* primary = blue background, secondary = white background */
   background-color: ${(props) => props.primary ? '#5c97bc' : 'var(--white)'};
   color: ${(props) => props.primary ? 'var(--white)' : '#2c4c61'};
-  border: ${(props) => props.primary ? 'none' : 'solid 2px #5c97bc'};
-  border: ${(props) => props.bordernone ? 'none' : 'solid 2px #5c97bc'};
+  border: ${(props) => props.withborder ? 'solid 2px #5c97bc' : 'none'};
  /* align-self: ${(props) => props.primary ? 'center' : 'auto'} */;
   `
 

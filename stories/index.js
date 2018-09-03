@@ -81,7 +81,7 @@ storiesOf('elements/HeroSubtitle', module)
 
 storiesOf('elements/Button', module)
   .add('Button', () => (
-    <Button bordernone onClick={action('clicked')}>Button</Button>
+    <Button onClick={action('clicked')}>Button</Button>
   ))
 
 storiesOf('elements/HeroImg', module)
