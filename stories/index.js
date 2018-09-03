@@ -222,7 +222,6 @@ storiesOf('layouts/footer', module)
         <Link to='/'><a>Preguntas Frecuentes</a></Link>
         <Link to='/'><a>Términos y condiiones</a></Link>
       </FooterBar>
-
       <FooterTextWrapper>
         <P>Honorable Cámara de diputados de la Nación Argentina | Congreso de la Nación Argentina | Av. Rivadavia 1864 | Ciudad Autónoma de Bs. As. (C.P. C1033AAV) | (54-11) 4127-7100</P>
         <P>La información contenida en este sitio es de dominio público y puede ser utilizada libremente. Se solicita citar la fuente.</P>
