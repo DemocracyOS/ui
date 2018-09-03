@@ -82,7 +82,7 @@ storiesOf('elements/HeroSubtitle', module)
 
 storiesOf('elements/HeroButton', module)
   .add('Hero Button', () => (
-    <HeroButton viewmore onClick={action('clicked')}>Hero button</HeroButton>
+    <HeroButton primary onClick={action('clicked')}>Hero button</HeroButton>
   ))
 
 storiesOf('elements/HeroImg', module)
@@ -118,17 +118,17 @@ storiesOf('layouts/navbar', module)
   .add('Navbar', () => (
     <Navbar>
       <NavBarTitle>
-        <Link to='/'><a>Co-Legis</a></Link>
+        <Link to='/'><a>co<span>legis</span></a></Link>
       </NavBarTitle>
       <Linkbar>
-        <Link to='/'><a>Inicio</a></Link>
         <Link to='/'><a>Proyectos</a></Link>
         <Link to='/'><a>Cómo participar</a></Link>
         <Link to='/'><a>La Propuesta</a></Link>
       </Linkbar>
       <UserBar>
-        <Link to='/'><a>Crear cuenta</a></Link>
-        <Link to='/'><a>Ingresar</a></Link>
+        <HeroButton>Iniciar sesión</HeroButton>
+        <HeroButton primary>Registrarse</HeroButton>
+
       </UserBar>
     </Navbar>
   ))

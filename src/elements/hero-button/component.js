@@ -2,16 +2,19 @@ import React from 'react'
 import styled from 'styled-components'
 
 const StyledButton = styled.button`
-  width: 200px;
-  height: 50px;
+  min-width: 125px;
+  height: 39px;
   background-color: var(--white);
-  font-size: 1.8rem;
+  font-size: 1.4rem;
   color: #5c97bc;
   border-style: none;
+  border-radius: 3px;
 
-  color: ${(props) => props.viewmore ? '#2d4b5e' : 'var(--secondary-color)'};
-  border: ${(props) => props.viewmore ? '2px solid var(--primary-color)' : 'none'};
-  align-self: ${(props) => props.viewmore ? 'center' : 'auto'};
+/* primary = blue background, secondary = white background */
+  background-color: ${(props) => props.primary ? '#5c97bc' : 'var(--white)'};
+  color: ${(props) => props.primary ? 'var(--white)' : '#2c4c61'};
+  border: ${(props) => props.primary ? 'none' : 'solid 2px #5c97bc'};
+ /* align-self: ${(props) => props.primary ? 'center' : 'auto'} */;
   `
 
 const styledButton = (props) => (
