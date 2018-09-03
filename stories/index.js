@@ -21,12 +21,13 @@ import UserAvatar from '../src/elements/user-avatar/component'
 import CardContent from '../src/elements/card-content/component'
 import CardSocial from '../src/elements/card-social/component'
 import Card from '../src/components/card/component'
-import FooterBar from '../src/elements/footer-navbar/component'
+import FooterBar from '../src/elements/footer-bar/component'
 import SocialIcon from '../src/elements/social-icon/component'
 import SocialBar from '../src/components/social-bar/component'
 import P from '../src/elements/footer-text/component'
 import FooterTextWrapper from '../src/elements/footer-text-wrapper/component'
 import Grid from '../src/layouts/grid/component'
+import FooterLogo from '../src/elements/footer-logo/component'
 
 addDecorator((story, context) => withInfo('common info')(story)(context))
 addDecorator((story) => <Router history={history}>{story()}</Router>)
@@ -205,27 +206,23 @@ storiesOf('layouts/footer', module)
     <Footer>
       <FooterBar>
         <NavBarTitle footer>
-          <Link to='/'><a>Co-Legis</a></Link>
+          <Link to='/'><FooterLogo img={'https://i.ytimg.com/vi/US8BmC2ZeBE/hqdefault.jpg'} /></Link>
         </NavBarTitle>
         <SocialBar>
-          <SocialIcon img={'https://i.ytimg.com/vi/US8BmC2ZeBE/hqdefault.jpg'} />
-          <SocialIcon img={'https://i.ytimg.com/vi/US8BmC2ZeBE/hqdefault.jpg'} />
-          <SocialIcon img={'https://i.ytimg.com/vi/US8BmC2ZeBE/hqdefault.jpg'} />
+          <SocialIcon
+            img={'https://i.ytimg.com/vi/US8BmC2ZeBE/hqdefault.jpg'} 
+            link={'/'} />
+          <SocialIcon img={'https://i.ytimg.com/vi/US8BmC2ZeBE/hqdefault.jpg'}
+            link={'/'} />
         </SocialBar>
         <Link to='/'><a>Proyectos</a></Link>
-        <Link to='/'><a>Cómo participar</a></Link>
         <Link to='/'><a>La Propuesta</a></Link>
-        <Link to='/'><a>Crear cuenta</a></Link>
-        <Link to='/'><a>Iniciar sesión</a></Link>
-        <Link to='/'><a>Contacto</a></Link>
         <Link to='/'><a>Preguntas Frecuentes</a></Link>
-        <Link to='/'><a>Términos y condiiones</a></Link>
+        <Link to='/'><a>Términos y condiciones</a></Link>
       </FooterBar>
-
       <FooterTextWrapper>
         <P>Honorable Cámara de diputados de la Nación Argentina | Congreso de la Nación Argentina | Av. Rivadavia 1864 | Ciudad Autónoma de Bs. As. (C.P. C1033AAV) | (54-11) 4127-7100</P>
         <P>La información contenida en este sitio es de dominio público y puede ser utilizada libremente. Se solicita citar la fuente.</P>
       </FooterTextWrapper>
-
     </Footer>
   ))
