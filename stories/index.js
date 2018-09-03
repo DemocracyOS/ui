@@ -55,8 +55,8 @@ storiesOf('elements/NavBarTitle', module)
 storiesOf('components/UserBar', module)
   .add('UserBar', () => (
     <UserBar>
-      <Link to='/'>Create account</Link>
-      <Link to='/'>Log in</Link>
+      <HeroButton>Create account</HeroButton>
+      <HeroButton primary>Login</HeroButton>
     </UserBar>
   ))
 
