@@ -1,6 +1,5 @@
 import React from 'react'
 // Import elements
-import FooterBar from './elements/footer-bar/component'
 import P from './elements/footer-text/component'
 import FooterTextWrapper from './elements/footer-text-wrapper/component'
 import FooterLogo from './elements/footer-logo/component'
@@ -15,12 +14,15 @@ import Button from './elements/button/component'
 import HeroImg from './elements/hero-img/component'
 import SubtitleH3 from './elements/subtitle-h3/component'
 import TitleH2 from './elements/title-h2/component'
+import SocialIcon from './elements/social-icon/component'
 
 // Import components
 import LinkBar from './components/linkbar/component'
 import UserBar from './components/user-bar/component'
 import HeroLeftColumn from './components/hero-left-column/component'
 import Card from './components/card/component'
+import FooterBar from './components/footer-bar/component'
+import SocialBar from './components/social-bar/component'
 
 // Import layouts
 import Section from './layouts/section/component'
@@ -54,5 +56,7 @@ export {
   P,
   FooterTextWrapper,
   Grid,
-  FooterLogo
+  FooterLogo,
+  SocialIcon,
+  SocialBar
 }
