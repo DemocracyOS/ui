@@ -212,7 +212,7 @@ storiesOf('layouts/footer', module)
         </NavBarTitle>
         <SocialBar>
           <SocialIcon
-            img={'https://i.ytimg.com/vi/US8BmC2ZeBE/hqdefault.jpg'} 
+            img={'https://i.ytimg.com/vi/US8BmC2ZeBE/hqdefault.jpg'}
             link={'/'} />
           <SocialIcon img={'https://i.ytimg.com/vi/US8BmC2ZeBE/hqdefault.jpg'}
             link={'/'} />
@@ -233,7 +233,7 @@ storiesOf('layouts/about', module)
   .add('Section About', () => (
     <About>
       <AboutImg />
-
+      <AboutText>hola</AboutText>
     </About>
   ))
 

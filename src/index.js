@@ -15,6 +15,8 @@ import HeroImg from './elements/hero-img/component'
 import SubtitleH3 from './elements/subtitle-h3/component'
 import TitleH2 from './elements/title-h2/component'
 import SocialIcon from './elements/social-icon/component'
+import AboutImg from './elements/about-img/component'
+import AboutText from './elements/about-text/component'
 
 // Import components
 import LinkBar from './components/linkbar/component'
@@ -30,6 +32,7 @@ import Navbar from './layouts/navbar/component'
 import Hero from './layouts/hero/component'
 import Footer from './layouts/footer/component'
 import Grid from './layouts/grid/component'
+import About from './layouts/about/component'
 
 // Export all components
 export {
@@ -58,5 +61,8 @@ export {
   Grid,
   FooterLogo,
   SocialIcon,
-  SocialBar
+  SocialBar,
+  AboutImg,
+  AboutText,
+  About
 }
