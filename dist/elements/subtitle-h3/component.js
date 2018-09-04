@@ -4,7 +4,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _templateObject = _taggedTemplateLiteral(['\n  font-size: 1.6rem;\n  color: var(--secondary-color);\n  padding:0 10 10 0;\n'], ['\n  font-size: 1.6rem;\n  color: var(--secondary-color);\n  padding:0 10 10 0;\n']);
+var _templateObject = _taggedTemplateLiteral(['\n  font-size: 1.4rem;\n  color: #101a21;\n  padding:0 10 10 0;\n  line-height: 3.5;\n'], ['\n  font-size: 1.4rem;\n  color: #101a21;\n  padding:0 10 10 0;\n  line-height: 3.5;\n']);
 
 var _react = require('react');
 

@@ -4,7 +4,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _templateObject = _taggedTemplateLiteral(['\n  max-width: 62.9rem;\n  > button {\n    margin: 37px 0;\n  }\n'], ['\n  max-width: 62.9rem;\n  > button {\n    margin: 37px 0;\n  }\n']);
+var _templateObject = _taggedTemplateLiteral(['\n  max-width: 62.9rem;\n'], ['\n  max-width: 62.9rem;\n']);
 
 var _react = require('react');
 

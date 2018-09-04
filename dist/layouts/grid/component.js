@@ -4,7 +4,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _templateObject = _taggedTemplateLiteral(['\n  width: 100%;\n  display: flex;\n  flex-wrap: wrap;\n  justify-content: space-between;\n  > div {\n    margin-bottom: 56px;\n  }\n  @media (max-width: 1400px) {\n    justify-content: space-around;\n  }\n'], ['\n  width: 100%;\n  display: flex;\n  flex-wrap: wrap;\n  justify-content: space-between;\n  > div {\n    margin-bottom: 56px;\n  }\n  @media (max-width: 1400px) {\n    justify-content: space-around;\n  }\n']);
+var _templateObject = _taggedTemplateLiteral(['\n  width: 100%;\n  display: flex;\n  flex-wrap: wrap;\n  justify-content: space-between;\n  margin: 4.8rem 0 1.6rem;\n  > div {\n    margin-bottom: 56px;\n  }\n  @media (max-width: 1400px) {\n    justify-content: space-around;\n  }\n'], ['\n  width: 100%;\n  display: flex;\n  flex-wrap: wrap;\n  justify-content: space-between;\n  margin: 4.8rem 0 1.6rem;\n  > div {\n    margin-bottom: 56px;\n  }\n  @media (max-width: 1400px) {\n    justify-content: space-around;\n  }\n']);
 
 var _react = require('react');
 

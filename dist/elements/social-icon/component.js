@@ -4,7 +4,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _templateObject = _taggedTemplateLiteral(['\nwidth: 30px;\nheight: 30px;\nborder-radius:50%;\nbackground-color: #a4cee8;\nbackground-image: url(\'', '\');\nbackground-size: cover;\nbackground-position: center;\n'], ['\nwidth: 30px;\nheight: 30px;\nborder-radius:50%;\nbackground-color: #a4cee8;\nbackground-image: url(\'', '\');\nbackground-size: cover;\nbackground-position: center;\n']);
+var _templateObject = _taggedTemplateLiteral(['\n  width: 30px;\n  height: 30px;\n  border-radius:50%;\n  background-color: #a4cee8;\n  background-image: url(\'', '\');\n  background-size: cover;\n  background-position: center;\n  margin-right: 2.0rem;\n'], ['\n  width: 30px;\n  height: 30px;\n  border-radius:50%;\n  background-color: #a4cee8;\n  background-image: url(\'', '\');\n  background-size: cover;\n  background-position: center;\n  margin-right: 2.0rem;\n']);
 
 var _react = require('react');
 
@@ -27,12 +27,18 @@ var StyledIcon = _styledComponents2.default.div(_templateObject, function (props
 });
 
 var SocialIcon = function SocialIcon(_ref) {
-  var img = _ref.img;
-  return _react2.default.createElement(StyledIcon, { img: img });
+  var img = _ref.img,
+      link = _ref.link;
+  return _react2.default.createElement(
+    'a',
+    { href: link },
+    _react2.default.createElement(StyledIcon, { img: img })
+  );
 };
 
 SocialIcon.propTypes = {
-  img: _propTypes2.default.string
+  img: _propTypes2.default.string.isRequired,
+  link: _propTypes2.default.string.isRequired
 };
 
 exports.default = SocialIcon;

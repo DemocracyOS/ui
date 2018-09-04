@@ -4,7 +4,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _templateObject = _taggedTemplateLiteral(['\n  text-align: center;\n  height: 80px;\n'], ['\n  text-align: center;\n  height: 80px;\n']);
+var _templateObject = _taggedTemplateLiteral(['\n  padding: 3.9rem 17.5rem 3.9rem;\n  background-color: #2c4c61;\n  text-align: center;\n  height: 12.6rem;\n'], ['\n  padding: 3.9rem 17.5rem 3.9rem;\n  background-color: #2c4c61;\n  text-align: center;\n  height: 12.6rem;\n']);
 
 var _react = require('react');
 
