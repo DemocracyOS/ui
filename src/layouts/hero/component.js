@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import PropTypes from 'prop-types'
 
 const StyledHero = styled.div`
-  margin: 10rem 10.2rem 108rem;
+  margin: 10rem 10.2rem 10.8rem;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
