@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
-import img from './asset.svg'
+import img from '../../assets/comment-icon.svg'
 
 const Wrapper = styled.div`
 height:85px;
