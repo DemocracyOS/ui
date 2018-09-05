@@ -28,7 +28,12 @@ import {
   P,
   FooterTextWrapper,
   Grid,
-  FooterLogo
+  FooterLogo,
+  ParticipateItem,
+  ParticipateTextbox,
+  ParticipateP,
+  Participate,
+  Separator
 } from '../src/index.js'
 
 addDecorator((story, context) => withInfo('common info')(story)(context))
@@ -119,7 +124,7 @@ storiesOf('layouts/footer', module)
         </NavBarTitle>
         <SocialBar>
           <SocialIcon
-            img={'https://i.ytimg.com/vi/US8BmC2ZeBE/hqdefault.jpg'} 
+            img={'https://i.ytimg.com/vi/US8BmC2ZeBE/hqdefault.jpg'}
             link={'/'} />
           <SocialIcon img={'https://i.ytimg.com/vi/US8BmC2ZeBE/hqdefault.jpg'}
             link={'/'} />
@@ -134,4 +139,28 @@ storiesOf('layouts/footer', module)
         <P>La información contenida en este sitio es de dominio público y puede ser utilizada libremente. Se solicita citar la fuente.</P>
       </FooterTextWrapper>
     </Footer>
+  ))
+
+storiesOf('layouts/participate', module)
+  .add('Participate', () => (
+    <Participate>
+      <ParticipateItem>
+        <ParticipateTextbox number={'1'} action={'Informate'} description={'Entrá y lee'} />
+        <Separator />
+        <ParticipateP text={'Elegí un proyecto que te interese  o te parezca relevante. Primero vas a encontrar una introducción a la propuesta de ley con los antecedentes, fundamentos e información relevante. a la ley, como surgió y su importancia. Después podés pasar a leer el texto del proyecto de ley.'} />
+      </ParticipateItem>
+
+      <ParticipateItem>
+        <ParticipateTextbox number={'1'} action={'Informate'} description={'Entrá y lee'} />
+        <Separator />
+        <ParticipateP text={'Elegí un proyecto que te interese  o te parezca relevante. Primero vas a encontrar una introducción a la propuesta de ley con los antecedentes, fundamentos e información relevante. a la ley, como surgió y su importancia. Después podés pasar a leer el texto del proyecto de ley.'} />
+      </ParticipateItem>
+
+      <ParticipateItem>
+        <ParticipateTextbox number={'1'} action={'Informate'} description={'Entrá y lee'} />
+        <Separator />
+        <ParticipateP text={'Elegí un proyecto que te interese  o te parezca relevante. Primero vas a encontrar una introducción a la propuesta de ley con los antecedentes, fundamentos e información relevante. a la ley, como surgió y su importancia. Después podés pasar a leer el texto del proyecto de ley.'} />
+      </ParticipateItem>
+      
+    </Participate>
   ))

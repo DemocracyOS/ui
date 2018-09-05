@@ -22,7 +22,10 @@ import {
   SocialIcon,
   P,
   FooterTextWrapper,
-  FooterLogo
+  FooterLogo,
+  ParticipateP,
+  ParticipateTextbox,
+  Separator
 } from '../src/index.js'
 
 addDecorator((story, context) => withInfo('common info')(story)(context))
@@ -118,4 +121,17 @@ storiesOf('elements/FooterTextWrapper', module)
 storiesOf('elements/P', module)
   .add('P', () => (
     <P>Honorable Cámara de diputados de la Nación Argentina | Congreso de la Nación Argentina | Av. Rivadavia 1864 | Ciudad Autónoma de Bs. As. (C.P. C1033AAV) | (54-11) 4127-7100</P>
+  ))
+
+storiesOf('elements/ParticipateP', module)
+  .add('P', () => (
+    <ParticipateP text={'text'} />
+  ))
+storiesOf('elements/ParticipateTextbox', module)
+  .add('Participate textbox', () => (
+    <ParticipateTextbox number={'01'} action={'Informate'} description={'Entrá y lee.'} />
+  ))
+storiesOf('elements/separator', module)
+  .add('Separator', () => (
+    <Separator />
   ))

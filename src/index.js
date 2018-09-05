@@ -15,6 +15,10 @@ import HeroImg from './elements/hero-img/component'
 import SubtitleH3 from './elements/subtitle-h3/component'
 import TitleH2 from './elements/title-h2/component'
 import SocialIcon from './elements/social-icon/component'
+import ParticipateP from './elements/participate-p/component'
+import ParticipateTextbox from './elements/participate-textbox/component'
+import Separator from './elements/separator/component'
+
 
 // Import components
 import LinkBar from './components/linkbar/component'
@@ -23,6 +27,8 @@ import HeroLeftColumn from './components/hero-left-column/component'
 import Card from './components/card/component'
 import FooterBar from './components/footer-bar/component'
 import SocialBar from './components/social-bar/component'
+import ParticipateItem from './components/participate-item/component'
+
 
 // Import layouts
 import Section from './layouts/section/component'
@@ -30,6 +36,8 @@ import Navbar from './layouts/navbar/component'
 import Hero from './layouts/hero/component'
 import Footer from './layouts/footer/component'
 import Grid from './layouts/grid/component'
+import Participate from './layouts/participate/component'
+
 
 // Export all components
 export {
@@ -58,5 +66,10 @@ export {
   Grid,
   FooterLogo,
   SocialIcon,
-  SocialBar
+  SocialBar,
+  Participate,
+  ParticipateItem,
+  ParticipateP,
+  ParticipateTextbox,
+  Separator
 }
