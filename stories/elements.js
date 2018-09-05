@@ -22,7 +22,9 @@ import {
   SocialIcon,
   P,
   FooterTextWrapper,
-  FooterLogo
+  FooterLogo,
+  AboutImg,
+  AboutText
 } from '../src/index.js'
 
 addDecorator((story, context) => withInfo('common info')(story)(context))
@@ -118,4 +120,18 @@ storiesOf('elements/FooterTextWrapper', module)
 storiesOf('elements/P', module)
   .add('P', () => (
     <P>Honorable Cámara de diputados de la Nación Argentina | Congreso de la Nación Argentina | Av. Rivadavia 1864 | Ciudad Autónoma de Bs. As. (C.P. C1033AAV) | (54-11) 4127-7100</P>
+  ))
+
+storiesOf('elements/about-img', module)
+  .add('About img', () => (
+    <AboutImg />
+  ))
+
+storiesOf('elements/about-text', module)
+  .add('About text', () => (
+    <AboutText>
+      <h2>Acerca de la propuesta</h2>
+      <p>Typewriter quinoa salvia semiotics gentrify sriracha VHS, heirloom readymade edison bulb direct trade thundercats vice. Tofu kombucha XOXO, affogato taiyaki mustache blue bottle gastropub flannel yuccie before they sold out direct trade trust fund. Small batch brunch tattooed fashion axe succulents four dollar toast letterpress edison bulb. Narwhal four loko fingerstache, fanny pack helvetica 8-bit intelligentsia tilde VHS messenger bag pickled.</p>
+      <Link to='/'><a>Conocé más</a></Link>
+    </AboutText>
   ))
