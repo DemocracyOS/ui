@@ -31,7 +31,7 @@ import {
   FooterLogo,
   About,
   AboutImg,
-  AboutText
+  AboutText,
   ParticipateItem,
   ParticipateTextbox,
   ParticipateP,
@@ -180,6 +180,5 @@ storiesOf('layouts/participate', module)
         <Separator />
         <ParticipateP text={'Elegí un proyecto que te interese  o te parezca relevante. Primero vas a encontrar una introducción a la propuesta de ley con los antecedentes, fundamentos e información relevante. a la ley, como surgió y su importancia. Después podés pasar a leer el texto del proyecto de ley.'} />
       </ParticipateItem>
-      
     </Participate>
   ))
