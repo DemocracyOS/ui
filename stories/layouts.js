@@ -28,7 +28,10 @@ import {
   P,
   FooterTextWrapper,
   Grid,
-  FooterLogo
+  FooterLogo,
+  About,
+  AboutImg,
+  AboutText
 } from '../src/index.js'
 
 addDecorator((story, context) => withInfo('common info')(story)(context))
@@ -119,7 +122,7 @@ storiesOf('layouts/footer', module)
         </NavBarTitle>
         <SocialBar>
           <SocialIcon
-            img={'https://i.ytimg.com/vi/US8BmC2ZeBE/hqdefault.jpg'} 
+            img={'https://i.ytimg.com/vi/US8BmC2ZeBE/hqdefault.jpg'}
             link={'/'} />
           <SocialIcon img={'https://i.ytimg.com/vi/US8BmC2ZeBE/hqdefault.jpg'}
             link={'/'} />
@@ -134,4 +137,16 @@ storiesOf('layouts/footer', module)
         <P>La información contenida en este sitio es de dominio público y puede ser utilizada libremente. Se solicita citar la fuente.</P>
       </FooterTextWrapper>
     </Footer>
+  ))
+
+storiesOf('layouts/about', module)
+  .add('About', () => (
+    <About>
+      <AboutImg />
+      <AboutText>
+        <h2>Acerca de la propuesta</h2>
+        <p>Co-legis es una plataforma de creación colaborativa de normas. En esta, los diputados asumen un compromiso con la ciudadanía de ponerse a disposición para incorporar puntos de vista y comentarios que se hagan en proyectos de ley a ser presentado en la cámara.</p>
+        <Link to='/'><a>Conocé más</a></Link>
+      </AboutText>
+    </About>
   ))

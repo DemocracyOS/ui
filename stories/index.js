@@ -28,6 +28,9 @@ import P from '../src/elements/footer-text/component'
 import FooterTextWrapper from '../src/elements/footer-text-wrapper/component'
 import Grid from '../src/layouts/grid/component'
 import FooterLogo from '../src/elements/footer-logo/component'
+import About from '../src/layouts/about/component'
+import AboutImg from '../src/elements/about-img/component'
+import AboutText from '../src/elements/about-text/component'
 
 addDecorator((story, context) => withInfo('common info')(story)(context))
 addDecorator((story) => <Router history={history}>{story()}</Router>)
@@ -209,7 +212,7 @@ storiesOf('layouts/footer', module)
         </NavBarTitle>
         <SocialBar>
           <SocialIcon
-            img={'https://i.ytimg.com/vi/US8BmC2ZeBE/hqdefault.jpg'} 
+            img={'https://i.ytimg.com/vi/US8BmC2ZeBE/hqdefault.jpg'}
             link={'/'} />
           <SocialIcon img={'https://i.ytimg.com/vi/US8BmC2ZeBE/hqdefault.jpg'}
             link={'/'} />
@@ -224,4 +227,17 @@ storiesOf('layouts/footer', module)
         <P>La información contenida en este sitio es de dominio público y puede ser utilizada libremente. Se solicita citar la fuente.</P>
       </FooterTextWrapper>
     </Footer>
+  ))
+
+storiesOf('layouts/about', module)
+  .add('Section About', () => (
+    <About>
+      <AboutImg />
+      <AboutText>hola</AboutText>
+    </About>
+  ))
+
+storiesOf('elements/about-img', module)
+  .add('About img', () => (
+    <AboutImg />
   ))
