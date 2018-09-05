@@ -14445,7 +14445,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _templateObject = _taggedTemplateLiteral(['\n  margin: 10rem 10.2rem 108rem;\n  display: flex;\n  justify-content: space-between;\n  align-items: flex-start;\n'], ['\n  margin: 10rem 10.2rem 108rem;\n  display: flex;\n  justify-content: space-between;\n  align-items: flex-start;\n']);
+var _templateObject = _taggedTemplateLiteral(['\n  margin: 10rem 10.2rem 10.8rem;\n  display: flex;\n  justify-content: space-between;\n  align-items: flex-start;\n'], ['\n  margin: 10rem 10.2rem 10.8rem;\n  display: flex;\n  justify-content: space-between;\n  align-items: flex-start;\n']);
 
 var _react = __webpack_require__(1);
 
