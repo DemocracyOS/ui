@@ -24,7 +24,11 @@ import {
   FooterTextWrapper,
   FooterLogo,
   AboutImg,
-  AboutText
+  AboutText,
+  ParticipateP,
+  ParticipateTextbox,
+  ParticipateTitle,
+  Separator
 } from '../src/index.js'
 
 addDecorator((story, context) => withInfo('common info')(story)(context))
@@ -134,4 +138,24 @@ storiesOf('elements/about-text', module)
       <p>Typewriter quinoa salvia semiotics gentrify sriracha VHS, heirloom readymade edison bulb direct trade thundercats vice. Tofu kombucha XOXO, affogato taiyaki mustache blue bottle gastropub flannel yuccie before they sold out direct trade trust fund. Small batch brunch tattooed fashion axe succulents four dollar toast letterpress edison bulb. Narwhal four loko fingerstache, fanny pack helvetica 8-bit intelligentsia tilde VHS messenger bag pickled.</p>
       <Link to='/'><a>Conocé más</a></Link>
     </AboutText>
+  ))
+
+storiesOf('elements/ParticipateP', module)
+  .add('P', () => (
+    <ParticipateP text={'text'} />
+  ))
+
+storiesOf('elements/ParticipateTextbox', module)
+  .add('Participate textbox', () => (
+    <ParticipateTextbox number={'01'} action={'Informate'} description={'Entrá y lee.'} />
+  ))
+
+storiesOf('elements/separator', module)
+  .add('Separator', () => (
+    <Separator />
+  ))
+
+storiesOf('elements/participate-title', module)
+  .add('Title', () => (
+    <ParticipateTitle>Title</ParticipateTitle>
   ))
