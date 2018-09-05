@@ -18,6 +18,7 @@ import SocialIcon from './elements/social-icon/component'
 import ParticipateP from './elements/participate-p/component'
 import ParticipateTextbox from './elements/participate-textbox/component'
 import Separator from './elements/separator/component'
+import ParticipateTitle from './elements/participate-title/component'
 
 
 // Import components
@@ -71,5 +72,6 @@ export {
   ParticipateItem,
   ParticipateP,
   ParticipateTextbox,
-  Separator
+  Separator,
+  ParticipateTitle
 }

@@ -25,6 +25,7 @@ import {
   FooterLogo,
   ParticipateP,
   ParticipateTextbox,
+  ParticipateTitle,
   Separator
 } from '../src/index.js'
 
@@ -134,4 +135,8 @@ storiesOf('elements/ParticipateTextbox', module)
 storiesOf('elements/separator', module)
   .add('Separator', () => (
     <Separator />
+  ))
+storiesOf('elements/participate-title', module)
+  .add('Title', () => (
+    <ParticipateTitle>Title</ParticipateTitle>
   ))
