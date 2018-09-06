@@ -39,6 +39,7 @@ import {
   ParticipateP,
   Participate,
   ParticipateTitle,
+  ParticipateContainer,
   Separator
 } from '../src/index.js'
 
@@ -169,23 +170,24 @@ storiesOf('layouts/participate', module)
   .addDecorator(CenterDecorator)
   .add('Participate', () => (
     <Participate>
-      <ParticipateTitle>Sarasa</ParticipateTitle>
-      <ParticipateItem>
-        <ParticipateTextbox number={'01'} action={'Informate'} description={'Entrá y lee.'} />
-        <Separator />
-        <ParticipateP text={'Elegí un proyecto que te interese  o te parezca relevante. Primero vas a encontrar una introducción a la propuesta de ley con los antecedentes, fundamentos e información relevante. a la ley, como surgió y su importancia. Después podés pasar a leer el texto del proyecto de ley.'} />
-      </ParticipateItem>
-
-      <ParticipateItem>
-        <ParticipateTextbox number={'02'} action={'Informate'} description={'Entrá y lee.'} />
-        <Separator />
-        <ParticipateP text={'Elegí un proyecto que te interese  o te parezca relevante. Primero vas a encontrar una introducción a la propuesta de ley con los antecedentes, fundamentos e información relevante. a la ley, como surgió y su importancia. Después podés pasar a leer el texto del proyecto de ley.'} />
-      </ParticipateItem>
-
-      <ParticipateItem>
-        <ParticipateTextbox number={'03'} action={'Informate'} description={'Entrá y lee.'} />
-        <Separator />
-        <ParticipateP text={'Elegí un proyecto que te interese  o te parezca relevante. Primero vas a encontrar una introducción a la propuesta de ley con los antecedentes, fundamentos e información relevante. a la ley, como surgió y su importancia. Después podés pasar a leer el texto del proyecto de ley.'} />
-      </ParticipateItem>
+      <ParticipateTitle>Cómo puedo participar</ParticipateTitle>
+      <ParticipateContainer>
+        <ParticipateItem>
+          <ParticipateTextbox number={'01'} action={'Informate'} description={'Entrá y lee.'} />
+          <Separator />
+          <ParticipateP text={'Elegí un proyecto que te interese  o te parezca relevante. Primero vas a encontrar una introducción a la propuesta de ley con los antecedentes, fundamentos e información relevante. a la ley, como surgió y su importancia. Después podés pasar a leer el texto del proyecto de ley.'} />
+        </ParticipateItem>
+        <ParticipateItem>
+          <ParticipateTextbox number={'02'} action={'Informate'} description={'Entrá y lee.'} />
+          <Separator />
+          <ParticipateP text={'Elegí un proyecto que te interese  o te parezca relevante. Primero vas a encontrar una introducción a la propuesta de ley con los antecedentes, fundamentos e información relevante. a la ley, como surgió y su importancia. Después podés pasar a leer el texto del proyecto de ley.'} />
+        </ParticipateItem>
+        <ParticipateItem>
+          <ParticipateTextbox number={'03'} action={'Informate'} description={'Entrá y lee.'} />
+          <Separator />
+          <ParticipateP text={'Elegí un proyecto que te interese  o te parezca relevante. Primero vas a encontrar una introducción a la propuesta de ley con los antecedentes, fundamentos e información relevante. a la ley, como surgió y su importancia. Después podés pasar a leer el texto del proyecto de ley.'} />
+        </ParticipateItem>
+      </ParticipateContainer>
+      <Button primary>Registrate y participá</Button>
     </Participate>
   ))

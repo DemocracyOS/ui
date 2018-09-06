@@ -32,6 +32,7 @@ import Card from './components/card/component'
 import FooterBar from './components/footer-bar/component'
 import SocialBar from './components/social-bar/component'
 import ParticipateItem from './components/participate-item/component'
+import ParticipateContainer from './components/participate-container/component'
 
 
 // Import layouts
@@ -81,5 +82,6 @@ export {
   ParticipateP,
   ParticipateTextbox,
   ParticipateTitle,
+  ParticipateContainer,
   Separator
 }
