@@ -12,7 +12,7 @@ const HeroLeftColumn  = ({ children }) => (
   </StyledLeftColumn>
 )
 
-HeroLeftColumn.PropTypes = {
+HeroLeftColumn.propTypes = {
   children: PropTypes.oneOfType([
     PropTypes.arrayOf(PropTypes.node),
     PropTypes.node
