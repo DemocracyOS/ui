@@ -1,18 +1,14 @@
-import React from 'react'
-import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
-const NavBarTitle = styled.span`
+const NavBarTitle = styled.div`
  > a {
-   font-family: var(--bold);
    font-size: 3rem;
-   color: ${(props) => props.footer ? '#4f81a1' : '#2d4b5e'};
-   text-decoration: none;
+   color: #203340;
+   text-decoration: none; 
+ }
+ &&& span {
+   font-family: var(--bold);
  }
 `
-
-NavBarTitle.propTypes = {
-  footer: PropTypes.bool
-}
 
 export default NavBarTitle

@@ -3,18 +3,20 @@ import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
 const Title = styled.h3`
-  font-size: 1.4rem;
+  font-size: 4rem;
   color: #101a21;
   padding:0 10 10 0;
   line-height: 3.5;
+  margin-left:auto;
+  margin-right:auto;
 `
 
-const SubtitleH3 = (props) => (
+const participateTitle = (props) => (
   <Title>{ props.children }</Title>
 )
 
-SubtitleH3.propTypes = {
+participateTitle.propTypes = {
   children: PropTypes.string.isRequired
 }
 
-export default SubtitleH3
+export default participateTitle
