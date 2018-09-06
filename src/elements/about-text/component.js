@@ -1,3 +1,5 @@
+import React from 'react'
+import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
 const StyledText = styled.div`
@@ -7,25 +9,6 @@ const StyledText = styled.div`
   height: 540px;
   display:flex;
   flex-direction:column;
-  h2, h3, p {
-    color: #fff;
-  }
-  p {
-  font-size:1.8rem;
-  font-family:var(--light);
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.67;
-  letter-spacing: normal;
-  }
-  h2 {
-  font-size:4rem;
-  font-family:var(--bold);
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.5;
-  letter-spacing: normal;
-  }
   a {
     text-decoration:none;
     font-size:1.6rem;
@@ -33,4 +16,17 @@ const StyledText = styled.div`
   }
 `
 
-export default StyledText
+const AboutText = ({ children }) => (
+  <StyledText>
+    {children}
+  </StyledText>
+)
+
+AboutText.propTypes = {
+  children: PropTypes.oneOfType([
+    PropTypes.arrayOf(PropTypes.node),
+    PropTypes.node
+  ]).isRequired
+}
+
+export default AboutText

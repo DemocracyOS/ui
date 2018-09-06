@@ -17,11 +17,12 @@ import TitleH2 from './elements/title-h2/component'
 import SocialIcon from './elements/social-icon/component'
 import AboutImg from './elements/about-img/component'
 import AboutText from './elements/about-text/component'
+import AboutH2 from './elements/about-h2/component'
+import AboutP from './elements/about-p/component'
 import ParticipateP from './elements/participate-p/component'
 import ParticipateTextbox from './elements/participate-textbox/component'
 import Separator from './elements/separator/component'
 import ParticipateTitle from './elements/participate-title/component'
-
 
 // Import components
 import LinkBar from './components/linkbar/component'
@@ -73,6 +74,8 @@ export {
   AboutImg,
   AboutText,
   About,
+  AboutH2,
+  AboutP,
   Participate,
   ParticipateItem,
   ParticipateP,

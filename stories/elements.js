@@ -25,6 +25,8 @@ import {
   FooterLogo,
   AboutImg,
   AboutText,
+  AboutH2,
+  AboutP,
   ParticipateP,
   ParticipateTextbox,
   ParticipateTitle,
@@ -126,16 +128,25 @@ storiesOf('elements/P', module)
     <P>Honorable Cámara de diputados de la Nación Argentina | Congreso de la Nación Argentina | Av. Rivadavia 1864 | Ciudad Autónoma de Bs. As. (C.P. C1033AAV) | (54-11) 4127-7100</P>
   ))
 
+storiesOf('elements/about-h2', module)
+  .add('About h2', () => (
+    <AboutH2>About H2</AboutH2>
+  ))
+storiesOf('elements/about-p', module)
+  .add('About Paragraph', () => (
+    <AboutP>About paragraph</AboutP>
+  ))
+
 storiesOf('elements/about-img', module)
   .add('About img', () => (
-    <AboutImg />
+    <AboutImg img={'https://www.ncn.com.ar/wp-content/uploads/2017/12/diputados-prevision1.jpg'} />
   ))
 
 storiesOf('elements/about-text', module)
   .add('About text', () => (
     <AboutText>
-      <h2>Acerca de la propuesta</h2>
-      <p>Typewriter quinoa salvia semiotics gentrify sriracha VHS, heirloom readymade edison bulb direct trade thundercats vice. Tofu kombucha XOXO, affogato taiyaki mustache blue bottle gastropub flannel yuccie before they sold out direct trade trust fund. Small batch brunch tattooed fashion axe succulents four dollar toast letterpress edison bulb. Narwhal four loko fingerstache, fanny pack helvetica 8-bit intelligentsia tilde VHS messenger bag pickled.</p>
+      <AboutH2>Acerca de la propuesta</AboutH2>
+      <AboutP>Typewriter quinoa salvia semiotics gentrify sriracha VHS, heirloom readymade edison bulb direct trade thundercats vice. Tofu kombucha XOXO, affogato taiyaki mustache blue bottle gastropub flannel yuccie before they sold out direct trade trust fund. Small batch brunch tattooed fashion axe succulents four dollar toast letterpress edison bulb. Narwhal four loko fingerstache, fanny pack helvetica 8-bit intelligentsia tilde VHS messenger bag pickled.</AboutP>
       <Link to='/'><a>Conocé más</a></Link>
     </AboutText>
   ))
