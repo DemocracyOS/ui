@@ -15,7 +15,7 @@ const Hero = ({ children }) => (
   </StyledHero>
 )
 
-Hero.PropTypes = {
+Hero.propTypes = {
   children: PropTypes.oneOfType([
     PropTypes.arrayOf(PropTypes.node),
     PropTypes.node

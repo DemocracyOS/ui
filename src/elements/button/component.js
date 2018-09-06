@@ -4,6 +4,7 @@ import PropTypes from 'prop-types'
 
 const StyledButton = styled.button`
   min-width: 125px;
+  max-width: 230px;
   height: 39px;
   background-color: var(--white);
   font-size: 1.4rem;
