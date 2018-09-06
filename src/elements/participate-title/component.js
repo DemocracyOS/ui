@@ -1,22 +1,13 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
-const Title = styled.h3`
+const ParticipateTitle = styled.h3`
   font-size: 4rem;
-  color: #101a21;
-  padding:0 10 10 0;
+  color: #2c4c61;
+  padding:0 10px 10px 0;
   line-height: 3.5;
   margin-left:auto;
   margin-right:auto;
 `
 
-const participateTitle = (props) => (
-  <Title>{ props.children }</Title>
-)
-
-participateTitle.propTypes = {
-  children: PropTypes.string.isRequired
-}
-
-export default participateTitle
+export default ParticipateTitle

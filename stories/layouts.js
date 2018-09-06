@@ -38,17 +38,12 @@ import {
   ParticipateTextbox,
   ParticipateP,
   Participate,
-  Separator,
-  ParticipateTitle
+  ParticipateTitle,
+  Separator
 } from '../src/index.js'
 
 addDecorator((story, context) => withInfo('common info')(story)(context))
 addDecorator((story) => <Router history={history}>{story()}</Router>)
-addDecorator((story) => (
-  <div style={{ 'display': 'flex', 'justifyContent': 'center', 'marginTop': '50px', 'flexWrap': 'wrap' }}>
-    {story()}
-  </div>
-))
 
 const history = createMemoryHistory()
 
@@ -57,6 +52,17 @@ history.replace = action('history.replace')
 history.go = action('history.go')
 history.goBack = action('history.goBack')
 history.goForward = action('history.goForward')
+
+const styles = {
+  display: 'flex',
+  'flex-wrap': 'wrap',
+  'justify-content': 'center'
+}
+const CenterDecorator = (storyFn) => (
+  <div style={styles}>
+    { storyFn() }
+  </div>
+)
 
 storiesOf('layouts/section', module)
   .add('Section', () => (
@@ -160,11 +166,10 @@ storiesOf('layouts/about', module)
   ))
 
 storiesOf('layouts/participate', module)
+  .addDecorator(CenterDecorator)
   .add('Participate', () => (
     <Participate>
-
-      <ParticipateTitle>Cómo puedo participar</ParticipateTitle>
-
+      <ParticipateTitle>Sarasa</ParticipateTitle>
       <ParticipateItem>
         <ParticipateTextbox number={'01'} action={'Informate'} description={'Entrá y lee.'} />
         <Separator />

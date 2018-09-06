@@ -21,8 +21,8 @@ import AboutH2 from './elements/about-h2/component'
 import AboutP from './elements/about-p/component'
 import ParticipateP from './elements/participate-p/component'
 import ParticipateTextbox from './elements/participate-textbox/component'
-import Separator from './elements/separator/component'
 import ParticipateTitle from './elements/participate-title/component'
+import Separator from './elements/separator/component'
 
 // Import components
 import LinkBar from './components/linkbar/component'
@@ -80,6 +80,6 @@ export {
   ParticipateItem,
   ParticipateP,
   ParticipateTextbox,
-  Separator,
-  ParticipateTitle
+  ParticipateTitle,
+  Separator
 }

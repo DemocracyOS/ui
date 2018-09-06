@@ -2,23 +2,21 @@ import React from 'react'
 import styled from 'styled-components'
 import PropTypes from 'prop-types'
 
-const StyledSection = styled.section`
+const StyledParticipateSection = styled.section`
   width: 100%;
   margin-left: 5rem;
   padding: 8.4rem 4.3rem;
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
+  flex-direction: row;
   align-items: flex-start;
   background-size: 60px 60px;
   background-image: linear-gradient(to right, #f2f5f8 1px, transparent 1px);
-  }
 `
 
 const Participate = ({ children }) => (
-  <StyledSection>
+  <StyledParticipateSection>
     { children }
-  </StyledSection>
+  </StyledParticipateSection>
 )
 
 Participate.propTypes = {
