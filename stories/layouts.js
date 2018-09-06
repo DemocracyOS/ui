@@ -32,21 +32,19 @@ import {
   About,
   AboutImg,
   AboutText,
+  AboutH2,
+  AboutP,
   ParticipateItem,
   ParticipateTextbox,
   ParticipateP,
   Participate,
-  Separator,
-  ParticipateTitle
+  ParticipateTitle,
+  ParticipateContainer,
+  Separator
 } from '../src/index.js'
 
 addDecorator((story, context) => withInfo('common info')(story)(context))
 addDecorator((story) => <Router history={history}>{story()}</Router>)
-addDecorator((story) => (
-  <div style={{ 'display': 'flex', 'justifyContent': 'center', 'marginTop': '50px', 'flexWrap': 'wrap' }}>
-    {story()}
-  </div>
-))
 
 const history = createMemoryHistory()
 
@@ -55,6 +53,17 @@ history.replace = action('history.replace')
 history.go = action('history.go')
 history.goBack = action('history.goBack')
 history.goForward = action('history.goForward')
+
+const styles = {
+  display: 'flex',
+  'flex-wrap': 'wrap',
+  'justify-content': 'center'
+}
+const CenterDecorator = (storyFn) => (
+  <div style={styles}>
+    { storyFn() }
+  </div>
+)
 
 storiesOf('layouts/section', module)
   .add('Section', () => (
@@ -148,37 +157,37 @@ storiesOf('layouts/footer', module)
 storiesOf('layouts/about', module)
   .add('About', () => (
     <About>
-      <AboutImg />
+      <AboutImg img={'https://www.ncn.com.ar/wp-content/uploads/2017/12/diputados-prevision1.jpg'} />
       <AboutText>
-        <h2>Acerca de la propuesta</h2>
-        <p>Co-legis es una plataforma de creación colaborativa de normas. En esta, los diputados asumen un compromiso con la ciudadanía de ponerse a disposición para incorporar puntos de vista y comentarios que se hagan en proyectos de ley a ser presentado en la cámara.</p>
+        <AboutH2>Acerca de la propuesta</AboutH2>
+        <AboutP>Co-legis es una plataforma de creación colaborativa de normas. En esta, los diputados asumen un compromiso con la ciudadanía de ponerse a disposición para incorporar puntos de vista y comentarios que se hagan en proyectos de ley a ser presentado en la cámara.</AboutP>
         <Link to='/'><a>Conocé más</a></Link>
       </AboutText>
     </About>
   ))
 
 storiesOf('layouts/participate', module)
+  .addDecorator(CenterDecorator)
   .add('Participate', () => (
     <Participate>
-
       <ParticipateTitle>Cómo puedo participar</ParticipateTitle>
-
-      <ParticipateItem>
-        <ParticipateTextbox number={'01'} action={'Informate'} description={'Entrá y lee.'} />
-        <Separator />
-        <ParticipateP text={'Elegí un proyecto que te interese  o te parezca relevante. Primero vas a encontrar una introducción a la propuesta de ley con los antecedentes, fundamentos e información relevante. a la ley, como surgió y su importancia. Después podés pasar a leer el texto del proyecto de ley.'} />
-      </ParticipateItem>
-
-      <ParticipateItem>
-        <ParticipateTextbox number={'02'} action={'Informate'} description={'Entrá y lee.'} />
-        <Separator />
-        <ParticipateP text={'Elegí un proyecto que te interese  o te parezca relevante. Primero vas a encontrar una introducción a la propuesta de ley con los antecedentes, fundamentos e información relevante. a la ley, como surgió y su importancia. Después podés pasar a leer el texto del proyecto de ley.'} />
-      </ParticipateItem>
-
-      <ParticipateItem>
-        <ParticipateTextbox number={'03'} action={'Informate'} description={'Entrá y lee.'} />
-        <Separator />
-        <ParticipateP text={'Elegí un proyecto que te interese  o te parezca relevante. Primero vas a encontrar una introducción a la propuesta de ley con los antecedentes, fundamentos e información relevante. a la ley, como surgió y su importancia. Después podés pasar a leer el texto del proyecto de ley.'} />
-      </ParticipateItem>
+      <ParticipateContainer>
+        <ParticipateItem>
+          <ParticipateTextbox number={'01'} action={'Informate'} description={'Entrá y lee.'} />
+          <Separator />
+          <ParticipateP text={'Elegí un proyecto que te interese  o te parezca relevante. Primero vas a encontrar una introducción a la propuesta de ley con los antecedentes, fundamentos e información relevante. a la ley, como surgió y su importancia. Después podés pasar a leer el texto del proyecto de ley.'} />
+        </ParticipateItem>
+        <ParticipateItem>
+          <ParticipateTextbox number={'02'} action={'Informate'} description={'Entrá y lee.'} />
+          <Separator />
+          <ParticipateP text={'Elegí un proyecto que te interese  o te parezca relevante. Primero vas a encontrar una introducción a la propuesta de ley con los antecedentes, fundamentos e información relevante. a la ley, como surgió y su importancia. Después podés pasar a leer el texto del proyecto de ley.'} />
+        </ParticipateItem>
+        <ParticipateItem>
+          <ParticipateTextbox number={'03'} action={'Informate'} description={'Entrá y lee.'} />
+          <Separator />
+          <ParticipateP text={'Elegí un proyecto que te interese  o te parezca relevante. Primero vas a encontrar una introducción a la propuesta de ley con los antecedentes, fundamentos e información relevante. a la ley, como surgió y su importancia. Después podés pasar a leer el texto del proyecto de ley.'} />
+        </ParticipateItem>
+      </ParticipateContainer>
+      <Button primary>Registrate y participá</Button>
     </Participate>
   ))

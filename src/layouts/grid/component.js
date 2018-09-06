@@ -1,7 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
-import Card from '../../components/card/component'
 
 const StyledGrid = styled.div`
   width: 100%;
@@ -17,16 +16,17 @@ const StyledGrid = styled.div`
   }
 `
 
-const Grid = ({ projects }) => (
+const Grid = ({ children }) => (
   <StyledGrid>
-    {projects.map((project, i) => (
-      <Card project={project} key={i} />
-    ))}
+    { children }
   </StyledGrid>
 )
 
 Grid.propTypes = {
-  projects: PropTypes.array.isRequired
+  children: PropTypes.oneOfType([
+    PropTypes.arrayOf(PropTypes.node),
+    PropTypes.node
+  ]).isRequired
 }
 
 export default Grid
