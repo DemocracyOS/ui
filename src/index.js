@@ -19,10 +19,12 @@ import AboutImg from './elements/about-img/component'
 import AboutText from './elements/about-text/component'
 import AboutH2 from './elements/about-h2/component'
 import AboutP from './elements/about-p/component'
+import AboutLink from './elements/about-link/component'
 import ParticipateP from './elements/participate-p/component'
 import ParticipateTextbox from './elements/participate-textbox/component'
 import ParticipateTitle from './elements/participate-title/component'
 import Separator from './elements/separator/component'
+import ArrowRight from './elements/arrow-right/component'
 
 // Import components
 import LinkBar from './components/linkbar/component'
@@ -77,11 +79,13 @@ export {
   About,
   AboutH2,
   AboutP,
+  AboutLink,
   Participate,
   ParticipateItem,
   ParticipateP,
   ParticipateTextbox,
   ParticipateTitle,
   ParticipateContainer,
-  Separator
+  Separator,
+  ArrowRight
 }

@@ -134,7 +134,7 @@ storiesOf('elements/about-h2', module)
   ))
 storiesOf('elements/about-p', module)
   .add('About Paragraph', () => (
-    <AboutP>About paragraph</AboutP>
+    <AboutP>About paragraph sarasa</AboutP>
   ))
 
 storiesOf('elements/about-img', module)
