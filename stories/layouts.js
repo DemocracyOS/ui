@@ -34,13 +34,15 @@ import {
   AboutText,
   AboutH2,
   AboutP,
+  AboutLink,
   ParticipateItem,
   ParticipateTextbox,
   ParticipateP,
   Participate,
   ParticipateTitle,
   ParticipateContainer,
-  Separator
+  Separator,
+  ArrowRight
 } from '../src/index.js'
 
 addDecorator((story, context) => withInfo('common info')(story)(context))
@@ -161,7 +163,7 @@ storiesOf('layouts/about', module)
       <AboutText>
         <AboutH2>Acerca de la propuesta</AboutH2>
         <AboutP>Co-legis es una plataforma de creación colaborativa de normas. En esta, los diputados asumen un compromiso con la ciudadanía de ponerse a disposición para incorporar puntos de vista y comentarios que se hagan en proyectos de ley a ser presentado en la cámara.</AboutP>
-        <Link to='/'><a>Conocé más</a></Link>
+        <AboutLink>  <Link to='/'><a>Conocé más</a> <ArrowRight /></Link></AboutLink>
       </AboutText>
     </About>
   ))
